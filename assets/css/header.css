@@ -2,8 +2,8 @@
   --header-font-size: calc( 18px + (45.5 - 18) * ((100vw - 320px) / (1920 - 320)) );
   --border-radius: 5px;
   --header-elements-size: 10vw;
-
-  margin: 2vw 3vw;
+ 
+  margin-top: 2vw;
   padding: 0 3vw;
 
   display: flex;
@@ -123,9 +123,6 @@
 }
 
 @media screen and (min-width: 1336px) {
-  .page-header{
-    margin: 2vw 5vw;
-  }
   .header-wrapper {
     width: 50vw;
   }

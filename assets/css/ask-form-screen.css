@@ -1,0 +1,22 @@
+
+
+@media screen and (min-width: 768px) {
+  .margin-right-form{
+    margin-left: auto;
+  }
+
+  .sub-heading,
+  .text-content,
+  .input-form{
+    float: right;
+  }
+  .img-wrapper{
+    float: left;
+  }
+  .input-form{
+    width: 100%;
+  }
+  .input-form>*{
+    width: 100%;
+  }
+}
