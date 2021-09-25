@@ -1,12 +1,28 @@
+.ask-form{
+  margin-top: 6vw;
+}
+.text-form{
+  --text-font-size: 12.83px;
 
+  font-size: var(--text-font-size);
+  letter-spacing:0.7px;
+  line-height: 1.2;
+}
 
+@media screen and (max-width: 550px) {
+  .header-form-transp{
+    width: 60%;
+    margin-bottom: 3vw;
+    text-align: start;
+  }
+}
 @media screen and (min-width: 768px) {
   .margin-right-form{
     margin-left: auto;
   }
 
-  .sub-heading,
-  .text-content,
+  .title-heading,
+  .text-form,
   .input-form{
     float: right;
   }
@@ -18,5 +34,17 @@
   }
   .input-form>*{
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .text-form{
+    --text-font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .text-form{
+    --text-font-size: 22.74px;
   }
 }
