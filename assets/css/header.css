@@ -1,8 +1,8 @@
 .page-header {
-  --header-font-size: calc( 18px + (45.5 - 18) * ((100vw - 320px) / (1920 - 320)) );
+  --header-font-size: 18px;
   --border-radius: 5px;
   --header-elements-size: 10vw;
- 
+
   margin-top: 2vw;
   padding: 0 3vw;
 
@@ -42,12 +42,13 @@
   height: inherit;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .page-header {
-    --header-font-size: calc(
-      27.17px + (45.5 - 27.17) * ((100vw - 1024px) / (1920 - 1024))
-    );
+    --header-font-size: 27.17px;
   }
+}
+
+@media screen and (min-width: 1024px) {
 
   .header-wrapper {
     width: 55vw;
@@ -123,14 +124,23 @@
 }
 
 @media screen and (min-width: 1336px) {
+  .page-header {
+    --header-font-size: 32px;
+  }
   .header-wrapper {
     width: 50vw;
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1500px) {
   .header-wrapper {
-    width: 47vw;
+    width: 45vw;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .page-header {
+    --header-font-size: 42.48px;
   }
   .contact-number p:last-child {
     text-align: center;
