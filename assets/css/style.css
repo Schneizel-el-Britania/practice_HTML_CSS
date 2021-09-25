@@ -1,5 +1,6 @@
 :root {
   --main-color: #65c466;
+  --border-radius: 5px;
   --title-header-font-size: 23px;
 
   font-family: "Poppins", sans-serif;
