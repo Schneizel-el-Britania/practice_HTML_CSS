@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/css/custom-checkbox.css" />
 
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/custom-grid.css" />
@@ -54,9 +55,12 @@
             <li></li>
           </ul>
           <div class="margin-right-form col-12 col-md-6 col-lg-7">
-            <h2 class="title-heading header-form-transp">
-              задайте вопрос юристу онлайн
-            </h2>
+            <div class="title-wrapper">
+              <h2 class="title-heading header-form-transp">
+                задайте вопрос юристу онлайн
+              </h2>
+              <button class="call">30 онлайн</button>
+            </div>
             <p class="text-form">
               Компания специализируется на оказании широкого спектра услуг как
               для корпоративных клиентов так и для частных лиц. Профессионализм
@@ -75,16 +79,29 @@
           <div class="margin-right-form col-12 col-md-6 col-lg-7">
             <form class="input-form" action="#">
               <input
+                class="input-data"
                 type="text"
                 name="data"
                 placeholder="Введите Ваш вопрос..."
                 required
               />
               <textarea
+                class="input-data"
                 name="data"
                 placeholder="Введите Ваш вопрос..."
                 required
               ></textarea>
+              <div class="submit-wrapper">
+                <label class="checkbox-container">
+                  <p class="checkbox-text">
+                    Нажимая кнопку “Отправить” вы соглашаетесь с политикой
+                    конфидециальности
+                  </p>
+                  <input type="checkbox" checked="checked" />
+                  <span class="checkmark"></span>
+                </label>
+                <input class="btn" type="submit" value="Отправить вопрос" />
+              </div>
             </form>
           </div>
         </article>

@@ -14,7 +14,7 @@
 
 .title-heading {
   width: 100%;
-  margin-bottom: calc(var(--title-header-font-size) * 0.6);
+  /* margin-bottom: calc(var(--title-header-font-size) * 0.6); */
 
   color: var(--main-color);
   font-family: "Cinzel", serif;
@@ -24,6 +24,23 @@
 }
 .title-heading::first-letter {
   text-transform: uppercase;
+}
+
+.btn{
+  --btn-font-size: 7.74px;
+  --brn-padding: 10px 20px;
+
+  padding: var(--brn-padding);
+  vertical-align: top; 
+
+  border: none;
+  border-radius: var(--border-radius);
+  color: white;
+  background-color: var(--main-color);
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.17);
+  
+  font-size: var(--btn-font-size);
+  font-weight: 600;
 }
 
 @media screen and (min-width: 1024px) {
