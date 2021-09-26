@@ -1,0 +1,50 @@
+.checkbox-container {
+  --checkbox-border-radius: 7px;
+  
+
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-tap-highlight-color: transparent; /* disable mobile touch effect */
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: white;
+
+  outline: 0.8px solid var(--main-color);
+  border-radius: var(--checkbox-border-radius);
+  border: 3px solid white;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: var(--main-color);
+}
+
+@media (pointer: fine) {
+
+  .checkbox-container:hover input ~ .checkmark {
+    background-color: var(--main-color);
+  }
+}
