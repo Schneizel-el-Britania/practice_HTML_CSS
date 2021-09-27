@@ -1,8 +1,10 @@
 .checkbox-container {
+  height: fit-content;
+  padding-left: 30px;
+  margin-bottom: 12px;
+
   display: block;
   position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
