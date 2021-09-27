@@ -18,7 +18,7 @@
 
   color: var(--main-color);
   font-family: "Cinzel", serif;
-  font-size: var(--title-header-font-size);
+font-size: var(--title-header-font-size);
   letter-spacing: 1px;
   text-align: center;
 }
@@ -27,7 +27,9 @@
 }
 
 .btn{
-  --btn-font-size: 7.74px;
+  --btn-font-ratio: 0.33652173913;
+  --btn-font-size: calc(var(--title-header-font-size) * var(--btn-font-ratio));
+
   --brn-padding: 10px 20px;
 
   padding: var(--brn-padding);
@@ -40,27 +42,36 @@
   box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.17);
   
   font-size: var(--btn-font-size);
+  font-family: inherit;
   font-weight: 600;
 }
-
+@media screen and (min-width: 768px) {
+  :root {
+    --title-header-font-size: calc(23px + (28.06 - 23) * ((100vw - 768px) / (1024 - 768)));
+  }
+  .btn{
+    --btn-font-ratio: 0.41739130434;
+  }
+}
 @media screen and (min-width: 1024px) {
-  .title-heading {
-    --title-header-font-size: 28px;
+  :root {
+    --title-header-font-size: calc(28.06px + (35 - 28.06) * ((100vw - 1024px) / (1336 - 1024)));
+  }
+  .btn{
+    --btn-font-ratio: 0.40021382751;
   }
 }
 
 @media screen and (min-width: 1336px) {
+  :root {
+    --title-header-font-size: calc(35px + (49.75 - 35) * ((100vw - 1336px) / (1920 - 1336)));
+  }
   .spaces {
     margin-left: 5vw;
     margin-right: 5vw;
   }
-  .title-heading {
-    --title-header-font-size: 35px;
+  .btn{
+    --btn-font-ratio: 0.4;
   }
 }
 
-@media screen and (min-width: 1920px) {
-  .title-heading {
-    --title-header-font-size: 49.75px;
-  }
-}
