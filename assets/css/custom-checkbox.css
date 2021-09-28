@@ -33,7 +33,6 @@
   top: 50%;
   left: 2%;
   transform: translate(0, -50%);
-  
 
   background-color: white;
 
@@ -47,7 +46,6 @@
 }
 
 @media (pointer: fine) {
-
   .checkbox-container:hover input ~ .checkmark {
     background-color: var(--main-color);
   }

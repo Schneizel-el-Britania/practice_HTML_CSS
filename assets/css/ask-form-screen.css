@@ -22,9 +22,7 @@
   --img-current-size: 260;
   --img-goal-size: 320;
   --img-size: calc(
-    (var(--img-current-size) * 1px) +
-      (var(--img-goal-size) - var(--img-current-size)) *
-      ((100vw - var(--min-width)) / var(--resolution-change))
+    (var(--img-current-size) * 1px) + (var(--img-goal-size) - var(--img-current-size)) * ((100vw - var(--min-width)) / var(--resolution-change))
   );
 
   width: var(--img-size);
@@ -162,12 +160,8 @@
 @media screen and (min-width: 1024px) {
   .menu-list {
     --menu-list-current-font-size: 14.8;
-    --menu-list-font-ratio: calc(
-      var(--menu-list-current-font-size) / var(--title-header-current-font-size)
-    );
-    --menu-list-font-size: calc(
-      var(--title-header-font-size) * var(--menu-list-font-ratio)
-    );
+    --menu-list-font-ratio: calc(var(--menu-list-current-font-size) / var(--title-header-current-font-size));
+    --menu-list-font-size: calc(var(--title-header-font-size) * var(--menu-list-font-ratio));
 
     padding: 0 1.5vw;
 
@@ -186,12 +180,8 @@
   }
   .list-search-icon {
     --search-icon-current-size: 19.74;
-    --search-icon-ratio: calc(
-      var(--search-icon-current-size) / var(--title-header-current-font-size)
-    );
-    --search-icon-size: calc(
-      var(--title-header-font-size) * var(--search-icon-ratio)
-    );
+    --search-icon-ratio: calc(var(--search-icon-current-size) / var(--title-header-current-font-size));
+    --search-icon-size: calc(var(--title-header-font-size) * var(--search-icon-ratio));
 
     width: var(--search-icon-size);
     height: var(--search-icon-size);
@@ -203,32 +193,20 @@
   }
   .text-form {
     --text-current-font-size: 12.83;
-    --text-font-ratio: calc(
-      var(--text-current-font-size) / var(--title-header-current-font-size)
-    );
-    --text-font-size: calc(
-      var(--title-header-font-size) * var(--text-font-ratio)
-    );
+    --text-font-ratio: calc(var(--text-current-font-size) / var(--title-header-current-font-size));
+    --text-font-size: calc(var(--title-header-font-size) * var(--text-font-ratio));
 
     width: 90%;
   }
   .input-font-size {
     --input-current-font-size: 11.23;
-    --input-font-ratio: calc(
-      var(--input-current-font-size) / var(--title-header-current-font-size)
-    );
-    --input-font-size: calc(
-      var(--title-header-font-size) * var(--input-font-ratio)
-    );
+    --input-font-ratio: calc(var(--input-current-font-size) / var(--title-header-current-font-size));
+    --input-font-size: calc(var(--title-header-font-size) * var(--input-font-ratio));
   }
   .call-btn {
     --call-btn-current-font-size: 55.33;
-    --call-btn-ratio: calc(
-      var(--call-btn-current-font-size) / var(--title-header-current-font-size)
-    );
-    --call-btn-size: calc(
-      var(--title-header-font-size) * var(--call-btn-ratio)
-    );
+    --call-btn-ratio: calc(var(--call-btn-current-font-size) / var(--title-header-current-font-size));
+    --call-btn-size: calc(var(--title-header-font-size) * var(--call-btn-ratio));
 
     position: absolute;
     right: 0;
