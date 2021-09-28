@@ -6,7 +6,6 @@
   --title-header-goal-font-size: 23;
   --resolution-change: calc(768 - 320);
   --min-width: 320px;
-  --title-header-font-size: 23px;
 
   --title-header-font-size: calc(
     (var(--title-header-current-font-size) * 1px) + (var(--title-header-goal-font-size) - var(--title-header-current-font-size)) *
@@ -74,7 +73,9 @@
   }
   .btn {
     --btn-current-font-size: 9.6;
-    --btn-current-padding-h: 13;
+    --btn-current-padding-h: 10;
+    --btn-padding-h-ratio: calc(var(--btn-current-padding-h) / var(--title-header-current-font-size));
+    --btn-padding-h-size: calc(var(--title-header-font-size) * var(--btn-padding-h-ratio));
   }
 }
 @media screen and (min-width: 1024px) {
@@ -93,10 +94,7 @@
 
   .btn {
     --btn-current-font-size: 11.23;
-
-    --btn-current-padding-h: 10;
-    --btn-padding-h-ratio: calc(var(--btn-current-padding-h) / var(--title-header-current-font-size));
-    --btn-padding-h-size: calc(var(--title-header-font-size) * var(--btn-padding-h-ratio));
+    --btn-current-padding-h: 11;
   }
 }
 
