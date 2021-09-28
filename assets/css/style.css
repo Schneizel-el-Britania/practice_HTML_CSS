@@ -34,6 +34,14 @@
   text-transform: uppercase;
 }
 
+.text-content {
+  --text-font-size: 12.83px;
+
+  font-size: var(--text-font-size);
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+}
+
 .btn {
   --btn-current-font-size: 7.74;
   --btn-font-ratio: calc(var(--btn-current-font-size) / var(--title-header-current-font-size));
@@ -77,6 +85,12 @@
     --min-width: 1024px;
   }
 
+  .text-content {
+    --text-current-font-size: 12.83;
+    --text-font-ratio: calc(var(--text-current-font-size) / var(--title-header-current-font-size));
+    --text-font-size: calc(var(--title-header-font-size) * var(--text-font-ratio));
+  }
+
   .btn {
     --btn-current-font-size: 11.23;
 
@@ -97,6 +111,10 @@
   .spaces {
     margin-left: 5vw;
     margin-right: 5vw;
+  }
+
+  .text-content {
+    --text-current-font-size: 16;
   }
 
   .btn {

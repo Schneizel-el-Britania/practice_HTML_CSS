@@ -12,14 +12,6 @@
   display: none;
 }
 
-.text-form {
-  --text-font-size: 12.83px;
-
-  font-size: var(--text-font-size);
-  letter-spacing: 0.5px;
-  line-height: 1.2;
-}
-
 .img-wrapper {
   text-align: center;
 }
@@ -105,7 +97,7 @@ textarea.input-data {
     justify-content: space-between;
     position: relative;
   }
-  .text-form {
+  .ask-form .text-content {
     margin-bottom: 6%;
   }
 
@@ -162,10 +154,6 @@ textarea.input-data {
     --margin-top: 20px;
   }
 
-  .title-heading,
-  .input-form {
-    float: right;
-  }
   .img-wrapper {
     float: left;
   }
@@ -205,11 +193,7 @@ textarea.input-data {
     --img-current-size: 374;
     --img-goal-size: 467;
   }
-  .text-form {
-    --text-current-font-size: 12.83;
-    --text-font-ratio: calc(var(--text-current-font-size) / var(--title-header-current-font-size));
-    --text-font-size: calc(var(--title-header-font-size) * var(--text-font-ratio));
-
+  .ask-form .text-content {
     width: 90%;
   }
 
@@ -261,9 +245,6 @@ textarea.input-data {
   .img-form {
     --img-current-size: 467;
     --img-goal-size: 663;
-  }
-  .text-form {
-    --text-current-font-size: 16;
   }
   .input-font-size {
     --input-current-font-size: 14;

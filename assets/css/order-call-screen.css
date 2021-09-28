@@ -77,7 +77,7 @@
   margin: 0;
   /* text-align: left; */
 }
-.order-call-inner-container > .text-form {
+.order-call-inner-container > .text-content {
   --text-font-size: 11px;
 
   width: 80%;
