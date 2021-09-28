@@ -2,9 +2,16 @@
   --main-color: #65c466;
   --border-radius: 5px;
 
+  --title-header-current-font-size: 23;
+  --title-header-goal-font-size: 23;
   --resolution-change: calc(768 - 320);
   --min-width: 320px;
   --title-header-font-size: 23px;
+
+  --title-header-font-size: calc(
+    (var(--title-header-current-font-size) * 1px) + (var(--title-header-goal-font-size) - var(--title-header-current-font-size)) *
+      ((100vw - var(--min-width)) / var(--resolution-change))
+  );
 
   font-family: "Poppins", sans-serif;
   font-size: 13px;
@@ -28,13 +35,14 @@
 }
 
 .btn {
-  --btn-font-ratio: 0.33652173913;
+  --btn-current-font-size: 7.74;
+  --btn-font-ratio: calc(var(--btn-current-font-size) / var(--title-header-current-font-size));
   --btn-font-size: calc(var(--title-header-font-size) * var(--btn-font-ratio));
 
-  --brn-padding: 10px 20px;
+  --btn-padding: 10px 20px;
 
   height: fit-content;
-  padding: var(--brn-padding);
+  padding: var(--btn-padding);
   vertical-align: top;
 
   border: none;
@@ -54,14 +62,9 @@
     --title-header-goal-font-size: 28.06;
     --resolution-change: calc(1024 - 768);
     --min-width: 768px;
-
-    --title-header-font-size: calc(
-      (var(--title-header-current-font-size) * 1px) + (var(--title-header-goal-font-size) - var(--title-header-current-font-size)) *
-        ((100vw - var(--min-width)) / var(--resolution-change))
-    );
   }
   .btn {
-    --btn-font-ratio: 0.41739130434;
+    --btn-current-font-size: 9.6;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -72,7 +75,7 @@
     --min-width: 1024px;
   }
   .btn {
-    --btn-font-ratio: 0.40021382751;
+    --btn-current-font-size: 11.23;
   }
 }
 
@@ -88,7 +91,7 @@
     margin-right: 5vw;
   }
   .btn {
-    --btn-font-ratio: 0.4;
+    --btn-current-font-size: 14;
   }
 }
 
