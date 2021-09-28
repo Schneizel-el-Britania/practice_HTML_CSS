@@ -39,11 +39,11 @@
   --btn-font-ratio: calc(var(--btn-current-font-size) / var(--title-header-current-font-size));
   --btn-font-size: calc(var(--title-header-font-size) * var(--btn-font-ratio));
 
-  --btn-padding: 10px 20px;
+  --btn-padding-h-size: 10px;
 
+  width: fit-content;
   height: fit-content;
-  padding: var(--btn-padding);
-  vertical-align: top;
+  padding: var(--btn-padding-h-size) calc(var(--btn-padding-h-size) * 2);
 
   border: none;
   border-radius: var(--border-radius);
@@ -54,6 +54,7 @@
   font-size: var(--btn-font-size);
   font-family: inherit;
   font-weight: 600;
+  vertical-align: top;
 }
 
 @media screen and (min-width: 768px) {
@@ -65,6 +66,7 @@
   }
   .btn {
     --btn-current-font-size: 9.6;
+    --btn-current-padding-h: 13;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -74,8 +76,13 @@
     --resolution-change: calc(1336 - 1024);
     --min-width: 1024px;
   }
+
   .btn {
     --btn-current-font-size: 11.23;
+
+    --btn-current-padding-h: 10;
+    --btn-padding-h-ratio: calc(var(--btn-current-padding-h) / var(--title-header-current-font-size));
+    --btn-padding-h-size: calc(var(--title-header-font-size) * var(--btn-padding-h-ratio));
   }
 }
 
@@ -86,12 +93,15 @@
     --resolution-change: calc(1920 - 1336);
     --min-width: 1336px;
   }
+
   .spaces {
     margin-left: 5vw;
     margin-right: 5vw;
   }
+
   .btn {
     --btn-current-font-size: 14;
+    --btn-current-padding-h: 13;
   }
 }
 
