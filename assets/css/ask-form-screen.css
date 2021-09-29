@@ -5,10 +5,10 @@
 
 .ask-form {
   --border-color: #c4c4c4;
-  padding-top: 1vw;
+  /* padding-top: 1vw; */
 }
 
-.title-heading {
+.ask-form .title-heading {
   text-align: left;
 }
 
@@ -16,9 +16,9 @@
   .margin-right-form {
     margin-left: auto;
   }
-  .padding-top-form {
+  /* .padding-top-form {
     padding-top: 6vw;
-  }
+  } */
 
   .title-wrapper {
     display: flex;
