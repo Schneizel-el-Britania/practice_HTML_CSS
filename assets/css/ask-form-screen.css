@@ -84,6 +84,12 @@ textarea.input-data {
   line-height: 1.2;
 }
 
+@media screen and (max-width: 767px) {
+  .img-wrapper {
+    margin-bottom: 4vw;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .margin-right-form {
     margin-left: auto;
