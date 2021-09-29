@@ -33,10 +33,15 @@ body * {
   margin-right: 3vw;
 }
 
+.padding-top{
+  padding-top: 6vw;
+}
+
 .title-heading {
   --object-current-font-size: 23;
   --object-goal-font-size: 23;
 
+  padding-bottom: 3vw;
   margin-bottom: calc(var(--title-header-font-size) * 0.6);
 
   color: var(--main-color);
@@ -86,9 +91,12 @@ body * {
     --resolution-change: calc(1024 - 768);
     --min-width: 768px;
   }
+
   .title-heading {
     --object-current-font-size: 23;
     --object-goal-font-size: 28.06;
+
+    padding-bottom: 1.5vw;
   }
   .btn {
     --object-current-font-size: 9.6;
