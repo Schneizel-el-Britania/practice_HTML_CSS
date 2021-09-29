@@ -1,0 +1,95 @@
+@import url(./custom-checkbox.css);
+
+.input-form {
+  --input-border-color: #cccccc;
+  --input-text-color: #c2c2c2;
+  --checkbox-text-color: #a3a3a3;
+
+  width: 100%;
+}
+
+.input-font-size {
+  --object-current-font-size: 11.23;
+  --object-goal-font-size: 11.23;
+  font-size: var(--object-font-size);
+}
+
+.input-data {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 2.5%;
+
+  color: var(--input-text-color);
+  border: 0.8px solid var(--input-border-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.07);
+
+  font-family: inherit;
+}
+
+textarea.input-data {
+  margin-bottom: 4%;
+}
+
+.input-data::placeholder {
+  color: inherit;
+}
+
+.input-form > textarea {
+  height: 120px;
+  resize: none;
+}
+
+.submit-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkmark {
+  --object-current-size: 11.94;
+  --object-goal-size: 14.43;
+}
+
+.checkbox-text {
+  color: var(--checkbox-text-color);
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 768px) {
+.input-form {
+  --margin-top: 20px;
+}
+}
+
+@media screen and (min-width: 1024px) {
+  .submit-wrapper {
+    flex-direction: column;
+  }
+
+  .submit-wrapper > .checkbox-container + .btn {
+    margin-top: 2%;
+  }
+
+  .input-font-size {
+    --object-current-font-size: 11.23;
+    --object-goal-font-size: 14;
+  }
+
+  .checkmark {
+    --object-current-size: 14.43;
+    --object-goal-size: 18;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .input-font-size {
+    --object-current-font-size: 14;
+    --object-goal-font-size: 19.9;
+  }
+  .checkmark {
+    --object-current-size: 18;
+    --object-goal-size: 25.58;
+  }
+}
+

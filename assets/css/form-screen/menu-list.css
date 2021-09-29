@@ -1,0 +1,43 @@
+.menu-list {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-list {
+    --object-current-font-size: 14.8;
+    --object-goal-font-size: 18;
+
+    padding: 0 1.5vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: var(--object-font-size);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .list-arrow-icon {
+    height: calc(var(--object-font-size) * 0.7);
+    padding-left: 0.5vw;
+    vertical-align: middle;
+  }
+  .list-search-icon {
+    --object-current-size: 19.74;
+    --object-goal-size: 24;
+
+    width: var(--object-size);
+    height: var(--object-size);
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .menu-list {
+    --object-current-font-size: 18;
+    --object-goal-font-size: 25.58;
+  }
+  .list-search-icon {
+    --object-current-size: 24;
+    --object-goal-size: 34.11;
+  }
+}
