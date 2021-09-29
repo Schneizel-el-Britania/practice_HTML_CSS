@@ -1,10 +1,4 @@
 .page-header {
-  --header-current-font-size: 18;
-  --header-goal-font-size: 27.17;
-  --header-font-size: calc(
-    (var(--header-current-font-size) * 1px) + (var(--header-goal-font-size) - var(--header-current-font-size)) *
-      ((100vw - var(--min-width)) / var(--resolution-change))
-  );
   --header-elements-size: 10vw;
 
   margin-top: 2vw;
@@ -24,10 +18,13 @@
 }
 
 .main-heading {
+  --object-current-font-size: 18;
+  --object-goal-font-size: 27.17;
+
   height: var(--header-elements-size);
   line-height: var(--header-elements-size);
   font-weight: 700;
-  font-size: var(--header-font-size);
+  font-size: var(--object-font-size);
 }
 .main-heading::first-letter {
   text-transform: uppercase;
@@ -47,16 +44,16 @@
 }
 
 @media screen and (min-width: 768px) {
-  .page-header {
-    --header-current-font-size: 27.17;
-    --header-goal-font-size: 27.17;
+  .main-heading {
+    --object-current-font-size: 27.17;
+    --object-goal-font-size: 27.17;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .page-header {
-    --header-current-font-size: 27.17;
-    --header-goal-font-size: 32;
+  .main-heading {
+    --object-current-font-size: 27.17;
+    --object-goal-font-size: 32;
   }
 
   .header-wrapper {
@@ -88,21 +85,19 @@
   }
 
   .contact-number p:first-child {
-    --number-current-font-size: 18.68;
-    --number-font-ratio: calc(var(--number-current-font-size) / var(--header-current-font-size));
-    --number-font-size: calc(var(--header-font-size) * var(--number-font-ratio));
+    --object-current-font-size: 18.68;
+    --object-goal-font-size: 22;
 
     margin-bottom: 4%;
-    font-size: var(--number-font-size);
+    font-size: var(--object-font-size);
     font-weight: 700;
   }
   .contact-number p:last-child {
-    --contact-text-current-font-size: 11.89;
-    --contact-text-font-ratio: calc(var(--contact-text-current-font-size) / var(--header-current-font-size));
-    --contact-text-font-size: calc(var(--header-font-size) * var(--contact-text-font-ratio));
+    --object-current-font-size: 11.89;
+    --object-goal-font-size: 14;
 
     text-align: end;
-    font-size: var(--contact-text-font-size);
+    font-size: var(--object-font-size);
     font-weight: 600;
   }
   .contact-number p:last-child::first-letter {
@@ -110,9 +105,8 @@
   }
 
   .contact-me {
-    --contact-btn-current-font-size: 11.89;
-    --contact-btn-font-ratio: calc(var(--contact-btn-current-font-size) / var(--header-current-font-size));
-    --contact-btn-font-size: calc(var(--header-font-size) * var(--contact-btn-font-ratio));
+    --object-current-font-size: 11.89;
+    --object-goal-font-size: 14;
 
     padding: 15px 35px;
 
@@ -123,7 +117,7 @@
 
     font-weight: 600;
     font-family: inherit;
-    font-size: var(--contact-btn-font-size);
+    font-size: var(--object-font-size);
     text-transform: uppercase;
   }
 
@@ -134,54 +128,45 @@
   }
 
   .auth p {
-    --auth-current-font-size: 9.4;
-    --auth-font-ratio: calc(var(--auth-current-font-size) / var(--header-current-font-size));
-    --auth-font-size: calc(var(--header-font-size) * var(--auth-font-ratio));
+    --object-current-font-size: 9.4;
+    --object-goal-font-size: 11.08;
 
     padding-top: 5px;
 
     font-weight: 600;
-    font-size: var(--auth-font-size);
+    font-size: var(--object-font-size);
     text-transform: uppercase;
   }
 }
 
 @media screen and (min-width: 1336px) {
-  .page-header {
-    --header-current-font-size: 32;
-    --header-goal-font-size: 45.48;
+  .main-heading {
+    --object-current-font-size: 32;
+    --object-goal-font-size: 45.48;
   }
   .header-wrapper {
     width: 50vw;
   }
   .contact-number p:first-child {
-    --number-current-font-size: 22;
+    --object-current-font-size: 22;
+    --object-goal-font-size: 31.27;
   }
   .contact-number p:last-child {
-    --contact-text-current-font-size: 14;
+    --object-current-font-size: 14;
+    --object-goal-font-size: 19.9;
   }
   .contact-me {
-    --contact-btn-current-font-size: 14;
+    --object-current-font-size: 14;
+    --object-goal-font-size: 19.9;
   }
   .auth p {
-    --auth-current-font-size: 11.08;
+    --object-current-font-size: 11.08;
+    --object-goal-font-size: 19.35;
   }
 }
 
 @media screen and (min-width: 1500px) {
   .header-wrapper {
     width: 45vw;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .page-header {
-    --header-font-size: 45.48px;
-  }
-  .contact-number p:last-child {
-    text-align: center;
-  }
-  .auth p {
-    --auth-font-size: 19.35px;
   }
 }

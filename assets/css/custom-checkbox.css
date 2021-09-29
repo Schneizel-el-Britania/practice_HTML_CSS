@@ -24,11 +24,11 @@
 
 /* Create a custom checkbox */
 .checkmark {
-  --checkmark-size: 25px;
-  --checkbox-border-radius: calc(var(--checkmark-size) / 3.57142857143);
+  /* --object-size: 25px; */
+  --checkbox-border-radius: calc(var(--object-size) / 3.57142857143);
 
-  width: var(--checkmark-size);
-  height: var(--checkmark-size);
+  width: var(--object-size);
+  height: var(--object-size);
   position: absolute;
   top: 50%;
   left: 0;

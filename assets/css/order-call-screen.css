@@ -1,13 +1,9 @@
 .order-call-container {
-  --container-current-height: 231;
-  --container-goal-height: 165;
-  --container-height: calc(
-    (var(--container-current-height) * 1px) + (var(--container-goal-height) - var(--container-current-height)) *
-      ((100vw - var(--min-width)) / var(--resolution-change))
-  );
+  --object-current-size: 231;
+  --object-goal-size: 165;
 
   width: 100%;
-  height: var(--container-height);
+  height: var(--object-size);
   margin-top: 6vw;
 
   border-radius: var(--border-radius);
@@ -33,22 +29,17 @@
 }
 
 .order-call-inner-container {
-  --inner-container-current-width: 231;
-  --inner-container-goal-width: 340;
-  --inner-container-width: calc(
-    (var(--inner-container-current-width) * 1px) + (var(--inner-container-goal-width) - var(--inner-container-current-width)) *
-      ((100vw - var(--min-width)) / var(--resolution-change))
+  --object-current-size: 231;
+  --object-goal-size: 340;
+
+  --object-current-size-height: 134;
+  --object-goal-size-height: 114;
+  --object-size-height: calc(
+    (var(--object-current-size-height) * 1px) + (var(--object-goal-size-height) - var(--object-current-size-height)) * ((100vw - var(--min-width)) / var(--resolution-change))
   );
 
-  --inner-container-current-height: 134;
-  --inner-container-goal-height: 114;
-  --inner-container-height: calc(
-    (var(--inner-container-current-height) * 1px) + (var(--inner-container-goal-height) - var(--inner-container-current-height)) *
-      ((100vw - var(--min-width)) / var(--resolution-change))
-  );
-
-  width: var(--inner-container-width);
-  height: var(--inner-container-height);
+  width: var(--object-size);
+  height: var(--object-size-height);
   padding: 3%;
   padding-right: 0;
   padding-bottom: 0;
@@ -69,27 +60,26 @@
 }
 
 .order-call-inner-container > .title-heading {
-  --title-header-current-font-size: 18;
-  --title-header-goal-font-size: 18;
-
-  --title-header-font-size: calc(
-    (var(--title-header-current-font-size) * 1px) + (var(--title-header-goal-font-size) - var(--title-header-current-font-size)) *
-      ((100vw - var(--min-width)) / var(--resolution-change))
-  );
+  --object-current-font-size: 18;
+  --object-goal-font-size: 18;
 
   margin: 0;
 }
 .order-call-inner-container > .text-content {
-  --text-font-size: 11px;
+  --object-current-font-size: 11;
+  --object-goal-font-size: 11;
 
   width: 80%;
   margin: 3.5% 0;
   text-align: left;
 }
 .order-call-inner-container > .btn {
-  --btn-current-font-size: 10;
-  --btn-padding-h-size: 4px;
-  padding: var(--btn-padding-h-size) calc(var(--btn-padding-h-size) * 8);
+  --object-current-font-size: 10;
+  --object-goal-font-size: 11;
+
+  --object-current-size: 4;
+  --object-goal-size: 6;
+  padding: var(--object-size) calc(var(--object-size) * 10);
   margin-bottom: 3%;
 }
 
@@ -103,18 +93,18 @@
 
 @media screen and (min-width: 768px) {
   .order-call-container {
-    --container-current-height: 165;
-    --container-goal-height: 165;
+    --object-current-size: 165;
+    --object-goal-size: 165;
   }
   .order-call-container::after {
     clip-path: polygon(0 0, 25% 0, 55% 100%, 0% 100%);
   }
   .order-call-inner-container {
-    --inner-container-current-width: 340;
-    --inner-container-goal-width: 280;
-
-    --inner-container-current-height: 114;
-    --inner-container-goal-height: 125;
+    --object-current-size: 340;
+    --object-goal-size: 280;
+    
+    --object-current-size-height: 114;
+    --object-goal-size-height: 125;
 
     top: 50%;
     left: 3%;
@@ -129,62 +119,69 @@
     margin: 3% 0;
   }
   .order-call-inner-container > .btn {
-    --btn-current-font-size: 11;
-    --btn-current-padding-h: 4.4;
-    --btn-padding-h-ratio: calc(var(--btn-current-padding-h) / var(--title-header-current-font-size));
-    --btn-padding-h-size: calc(var(--title-header-font-size) * var(--btn-padding-h-ratio));
+    --object-current-font-size: 11;
+    --object-goal-font-size: 11;
+  
+    --object-current-size: 4.5;
+    --object-goal-size: 5;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .order-call-container {
-    --container-current-height: 165;
-    --container-goal-height: 200;
+    --object-current-size: 165;
+    --object-goal-size: 200;
   }
   .order-call-inner-container {
-    --inner-container-current-width: 280;
-    --inner-container-goal-width: 309;
-
-    --inner-container-current-height: 125;
-    --inner-container-goal-height: 147;
+    --object-current-size: 280;
+    --object-goal-size: 309;
+    
+    --object-current-size-height: 125;
+    --object-goal-size-height: 147;
   }
   .order-call-inner-container > .title-heading {
-    --title-header-current-font-size: 18;
-    --title-header-goal-font-size: 20;
+    --object-current-font-size: 18;
+    --object-goal-font-size: 20;
   }
   .order-call-inner-container > .text-content {
-    --text-current-font-size: 11;
-    --text-font-ratio: calc(var(--text-current-font-size) / var(--title-header-current-font-size));
-    --text-font-size: calc(var(--title-header-font-size) * var(--text-font-ratio));
+    --object-current-font-size: 11;
+    --object-goal-font-size: 13;
   }
   .order-call-inner-container > .btn {
-    --btn-current-font-size: 11;
-    --btn-current-padding-h: 6;
+    --object-current-font-size: 11;
+    --object-goal-font-size: 13;
+  
+    --object-current-size: 5;
+    --object-goal-size: 5.5;
   }
 }
 
 @media screen and (min-width: 1336px) {
   .order-call-container {
-    --container-current-height: 200;
-    --container-goal-height: 284;
+    --object-current-size: 200;
+    --object-goal-size: 284;
   }
   .order-call-inner-container {
-    --inner-container-current-width: 309;
-    --inner-container-goal-width: 450;
-
-    --inner-container-current-height: 147;
-    --inner-container-goal-height: 213;
+    --object-current-size: 309;
+    --object-goal-size: 450;
+    
+    --object-current-size-height: 147;
+    --object-goal-size-height: 213;
   }
 
   .order-call-inner-container > .title-heading {
-    --title-header-current-font-size: 20;
-    --title-header-goal-font-size: 28.43;
+    --object-current-font-size: 20;
+    --object-goal-font-size: 28.43;
   }
   .order-call-inner-container > .text-content {
-    --text-current-font-size: 13;
+    --object-current-font-size: 13;
+    --object-goal-font-size: 18.48;
   }
   .order-call-inner-container > .btn {
-    --btn-current-font-size: 13;
-    --btn-current-padding-h: 8.5;
+    --object-current-font-size: 13;
+    --object-goal-font-size: 18.48;
+  
+    --object-current-size: 5.5;
+    --object-goal-size: 10;
   }
 }
