@@ -1,11 +1,10 @@
-@import url(./form-screen/image-form.css);
-@import url(./form-screen/menu-list.css);
-@import url(./form-screen/call-btn.css);
-@import url(./form-screen/input-form.css);
+@import url(./form-objects/image-form.css);
+@import url(./form-objects/menu-list.css);
+@import url(./form-objects/call-btn.css);
+@import url(./form-objects/input-form.css);
 
 .ask-form {
   --border-color: #c4c4c4;
-  /* padding-top: 1vw; */
 }
 
 .ask-form .title-heading {
@@ -16,9 +15,6 @@
   .margin-right-form {
     margin-left: auto;
   }
-  /* .padding-top-form {
-    padding-top: 6vw;
-  } */
 
   .title-wrapper {
     display: flex;
