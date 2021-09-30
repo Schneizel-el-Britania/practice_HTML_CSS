@@ -1,30 +1,56 @@
 .card-navigation {
   --nav-items-color: #e8e2d5;
 
-  width: 199px;
+  --object-current-size: 199;
+  --object-goal-size: 258.7;
+
+  --nav-width: var(--object-size);
+  width: var(--nav-width);
+  height: 3.33px;
   margin: auto;
   margin-top: 2vw;
   display: flex;
   justify-content: space-between;
   font-size: 0;
-
-  /* display: block; */
-  /* width: max-content; */
-  /* white-space: nowrap; */
 }
 
 .card-nav-item {
-  width: 27.6px;
-  height: 3.33px;
+  width: calc(var(--nav-width) / 7.2);
 
   display: inline-block;
   background-color: var(--nav-items-color);
   border-radius: var(--border-radius);
 }
-.card-nav-item:first-child{
+.card-nav-item:first-child {
   background-color: var(--main-color);
 }
 
-/* .card-nav-item + .card-nav-item {
-  margin-left: 10px;
-} */
+@media screen and (min-width: 768px) {
+  .card-navigation {
+    --object-current-size: 258.7;
+    --object-goal-size: 344.66;
+    height: 4.33px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card-navigation {
+    --object-current-size: 344.66;
+    --object-goal-size: 418.6;
+    height: 5.76px;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .card-navigation {
+    --object-current-size: 418.6;
+    --object-goal-size: 595;
+    height: 7px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .card-navigation {
+    height: 9.95px;
+  }
+}

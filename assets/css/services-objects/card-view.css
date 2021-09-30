@@ -1,56 +1,10 @@
 .card-view {
   width: 100%;
 
-  position: relative;
+  /* white-space: nowrap; */
+
+  /* position: relative; */
 }
-
-/* .cards-wrapper{
-  display: inline-block;
-  position: relative; 
-  width: stretch;
-  height: fit-content;
-} */
-.card-nav-btn{
-  border: none;
-
-  /* background-color: none; */
-  background-image: url(../../icons/card-nav-btn-left.png);
-  background-repeat: no-repeat;
-  background-size: 24.85px;
-
-  width: 24.85px;
-  height: 24.85px;
-
-  position: absolute;
-  top: 50%;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  /* z-index: 2; */
-}
-.card-nav-btn + .card-nav-btn{
-  background-image: url(../../icons/card-nav-btn-right.png);
-  left: 100%;
-}
-/* .cards-wrapper::before,
-.cards-wrapper::after{
-  content: '';
-  background-image: url(../../icons/card-nav-btn-right.png);
-  background-repeat: no-repeat;
-  background-size: 24.85px;
-
-  position: relative;
-  top: 50%;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-.cards-wrapper::before{
-  background-image: url(../../icons/card-nav-btn-left.png);
-  bottom: 0;
-  right: 0;
-  left: 0;
-} */
 
 .card {
   --object-current-size: 211;
@@ -68,6 +22,7 @@
 
   position: relative;
 }
+
 .secondary {
   display: none;
 }
@@ -90,7 +45,7 @@
   color: white;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.3px;
-  line-height: 12px;
+  /* line-height: 12px; */
 
   position: absolute;
   bottom: 0;
@@ -135,6 +90,14 @@
 }
 
 @media screen and (min-width: 768px) {
+  .card {
+    --object-current-size: 190;
+    --object-goal-size: 253;
+  }
+  .card + .card {
+    margin-left: 3%;
+  }
+
   .secondary {
     --secondary-width: calc(var(--object-size) * 0.95);
 
@@ -143,8 +106,8 @@
     display: inline-block;
   }
 
-  .card + .card {
-    margin-left: 3%;
+  .info-container {
+    height: 55%;
   }
 
   .card-header {
@@ -158,5 +121,43 @@
   .card-more-details {
     --object-current-font-size: 9.52;
     --object-goal-font-size: 12.68;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    --object-current-size: 253;
+    --object-goal-size: 307;
+  }
+  .card-header {
+    --object-current-font-size: 21.13;
+    --object-goal-font-size: 25.67;
+  }
+  .card-desc {
+    --object-current-font-size: 13.38;
+    --object-goal-font-size: 18.26;
+  }
+  .card-more-details {
+    --object-current-font-size: 12.68;
+    --object-goal-font-size: 15.4;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .card {
+    --object-current-size: 307;
+    --object-goal-size: 436;
+  }
+  .card-header {
+    --object-current-font-size: 25.67;
+    --object-goal-font-size: 36.48;
+  }
+  .card-desc {
+    --object-current-font-size: 18.26;
+    --object-goal-font-size: 23.11;
+  }
+  .card-more-details {
+    --object-current-font-size: 15.4;
+    --object-goal-font-size: 21.89;
   }
 }
