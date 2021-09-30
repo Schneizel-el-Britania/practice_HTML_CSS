@@ -1,0 +1,30 @@
+.card-navigation {
+  --nav-items-color: #e8e2d5;
+
+  width: 199px;
+  margin: auto;
+  margin-top: 2vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0;
+
+  /* display: block; */
+  /* width: max-content; */
+  /* white-space: nowrap; */
+}
+
+.card-nav-item {
+  width: 27.6px;
+  height: 3.33px;
+
+  display: inline-block;
+  background-color: var(--nav-items-color);
+  border-radius: var(--border-radius);
+}
+.card-nav-item:first-child{
+  background-color: var(--main-color);
+}
+
+/* .card-nav-item + .card-nav-item {
+  margin-left: 10px;
+} */

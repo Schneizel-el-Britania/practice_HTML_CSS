@@ -34,7 +34,7 @@ body * {
 }
 
 .padding-top{
-  padding-top: 6vw;
+  padding-top: 7vw;
 }
 
 .title-heading {
@@ -90,6 +90,10 @@ body * {
   :root {
     --resolution-change: calc(1024 - 768);
     --min-width: 768px;
+  }
+
+  .padding-top{
+    padding-top: 6vw;
   }
 
   .title-heading {
