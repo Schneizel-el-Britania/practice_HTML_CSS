@@ -7,7 +7,7 @@
     --object-current-font-size: 14.8;
     --object-goal-font-size: 18;
 
-    padding: 0 1.5vw;
+    padding: 0.5vw 1.5vw;
 
     display: flex;
     justify-content: space-between;
