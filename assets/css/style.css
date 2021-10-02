@@ -1,5 +1,6 @@
 :root {
   --main-color: #65c466;
+  --text-color: #414141;
   --border-radius: 5px;
 
   --resolution-change: calc(768 - 320);
@@ -57,8 +58,8 @@ body * {
   --object-current-font-size: 12.83;
   --object-goal-font-size: 12.83;
 
+  color: var(--text-color);
   font-size: var(--object-font-size);
-
   letter-spacing: 0.5px;
   line-height: 1.2;
 }

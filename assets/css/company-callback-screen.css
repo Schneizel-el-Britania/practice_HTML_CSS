@@ -1,0 +1,24 @@
+.callback-spaces{
+  margin-left: 3vw;
+}
+
+.callback-header {
+  width: 95%;
+  text-align: left;
+}
+.callback-header > span{
+  color: var(--text-color);
+}
+
+.callback-list {
+  color: var(--text-color);
+  font-size: 11px;
+  font-weight: 600;
+}
+.callback-list > li {
+  padding-left: 2em;
+  padding-bottom: 1em;
+  background-image: url(../icons/callback-list-icon.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
