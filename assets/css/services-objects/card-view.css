@@ -1,9 +1,5 @@
 .card-view {
   width: 100%;
-
-  /* white-space: nowrap; */
-
-  /* position: relative; */
 }
 
 .card {
@@ -45,7 +41,6 @@
   color: white;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.3px;
-  /* line-height: 12px; */
 
   position: absolute;
   bottom: 0;
