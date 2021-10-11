@@ -4,8 +4,7 @@
 
 @media screen and (min-width: 1024px) {
   .menu-list {
-    --object-current-font-size: 14.8;
-    --object-goal-font-size: 18;
+    --object-font-size: 14.8px;
 
     padding: 0.5vw 1.5vw;
 
@@ -23,8 +22,7 @@
     vertical-align: middle;
   }
   .list-search-icon {
-    --object-current-size: 19.74;
-    --object-goal-size: 24;
+    --object-size: 19.74px;
 
     width: var(--object-size);
     height: var(--object-size);
@@ -33,11 +31,18 @@
 
 @media screen and (min-width: 1336px) {
   .menu-list {
-    --object-current-font-size: 18;
-    --object-goal-font-size: 25.58;
+    --object-font-size: 18px;
   }
   .list-search-icon {
-    --object-current-size: 24;
-    --object-goal-size: 34.11;
+    --object-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .menu-list {
+    --object-font-size: 25.58px;
+  }
+  .list-search-icon {
+    --object-size: 34.11px;
   }
 }

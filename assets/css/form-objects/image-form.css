@@ -3,8 +3,7 @@
 }
 
 .img-form {
-  --object-current-size: 260;
-  --object-goal-size: 320;
+  --object-size: 260px;
 
   width: var(--object-size);
   height: var(--object-size);
@@ -25,8 +24,7 @@
   }
 
   .img-form {
-    --object-current-size: 320;
-    --object-goal-size: 374;
+    --object-size: 320px;
 
     position: absolute;
     top: 18vw;
@@ -35,14 +33,19 @@
 
 @media screen and (min-width: 1024px) {
   .img-form {
-    --object-current-size: 374;
-    --object-goal-size: 467;
+    --object-size: 374px;
   }
 }
 
 @media screen and (min-width: 1336px) {
   .img-form {
-    --object-current-size: 467;
-    --object-goal-size: 663;
+    --object-size: 467px;
   }
 }
+
+@media screen and (min-width: 1920px) {
+  .img-form {
+    --object-size: 663px;
+  }
+}
+

@@ -18,8 +18,7 @@
 }
 
 .main-heading {
-  --object-current-font-size: 18;
-  --object-goal-font-size: 27.17;
+  --object-font-size: 18px;
 
   height: var(--header-elements-size);
   line-height: var(--header-elements-size);
@@ -45,16 +44,11 @@
 
 @media screen and (min-width: 768px) {
   .main-heading {
-    --object-current-font-size: 27.17;
-    --object-goal-font-size: 27.17;
+    --object-font-size: 27.17px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .main-heading {
-    --object-current-font-size: 27.17;
-    --object-goal-font-size: 32;
-  }
 
   .header-wrapper {
     width: 55vw;
@@ -85,16 +79,14 @@
   }
 
   .contact-number p:first-child {
-    --object-current-font-size: 18.68;
-    --object-goal-font-size: 22;
+    --object-font-size: 18.68px;
 
     margin-bottom: 4%;
     font-size: var(--object-font-size);
     font-weight: 700;
   }
   .contact-number p:last-child {
-    --object-current-font-size: 11.89;
-    --object-goal-font-size: 14;
+    --object-font-size: 11.89px;
 
     text-align: end;
     font-size: var(--object-font-size);
@@ -105,8 +97,7 @@
   }
 
   .contact-me {
-    --object-current-font-size: 11.89;
-    --object-goal-font-size: 14;
+    --object-font-size: 11.89px;
 
     padding: 15px 35px;
 
@@ -128,8 +119,7 @@
   }
 
   .auth p {
-    --object-current-font-size: 9.4;
-    --object-goal-font-size: 11.08;
+    --object-font-size: 9.4px;
 
     padding-top: 5px;
 
@@ -141,32 +131,48 @@
 
 @media screen and (min-width: 1336px) {
   .main-heading {
-    --object-current-font-size: 32;
-    --object-goal-font-size: 45.48;
+    --object-font-size: 32px;
   }
   .header-wrapper {
     width: 50vw;
   }
   .contact-number p:first-child {
-    --object-current-font-size: 22;
-    --object-goal-font-size: 31.27;
+    --object-font-size: 22px;
   }
   .contact-number p:last-child {
-    --object-current-font-size: 14;
-    --object-goal-font-size: 19.9;
+    --object-font-size: 14px;
   }
   .contact-me {
-    --object-current-font-size: 14;
-    --object-goal-font-size: 19.9;
+    --object-font-size: 14px;
   }
   .auth p {
-    --object-current-font-size: 11.08;
-    --object-goal-font-size: 19.35;
+    --object-font-size: 11.08px;
   }
 }
 
 @media screen and (min-width: 1500px) {
   .header-wrapper {
     width: 45vw;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .main-heading {
+    --object-font-size: 45.48px;
+  }
+  .header-wrapper {
+    width: 50vw;
+  }
+  .contact-number p:first-child {
+    --object-font-size: 31.27px;
+  }
+  .contact-number p:last-child {
+    --object-font-size: 19.9px;
+  }
+  .contact-me {
+    --object-font-size: 19.9px;
+  }
+  .auth p {
+    --object-font-size: 19.35px;
   }
 }

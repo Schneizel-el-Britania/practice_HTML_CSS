@@ -1,11 +1,8 @@
 .card-navigation {
   --nav-items-color: #e8e2d5;
-
-  --object-current-size: 199;
-  --object-goal-size: 258.7;
-
-  --nav-width: var(--object-size);
-  width: var(--nav-width);
+  --object-size: 199px;
+  
+  width: var(--object-size);
   height: 3.33px;
   margin: auto;
   margin-top: 2vw;
@@ -15,7 +12,7 @@
 }
 
 .card-nav-item {
-  width: calc(var(--nav-width) / 7.2);
+  width: calc(var(--object-size) / 7.2);
 
   display: inline-block;
   background-color: var(--nav-items-color);
@@ -27,30 +24,28 @@
 
 @media screen and (min-width: 768px) {
   .card-navigation {
-    --object-current-size: 258.7;
-    --object-goal-size: 344.66;
+    --object-size: 258.7px;
     height: 4.33px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .card-navigation {
-    --object-current-size: 344.66;
-    --object-goal-size: 418.6;
+    --object-size: 344.66px;
     height: 5.76px;
   }
 }
 
 @media screen and (min-width: 1336px) {
   .card-navigation {
-    --object-current-size: 418.6;
-    --object-goal-size: 595;
+    --object-size: 418.6px;
     height: 7px;
   }
 }
 
 @media screen and (min-width: 1920px) {
   .card-navigation {
+    --object-size: 595px;
     height: 9.95px;
   }
 }

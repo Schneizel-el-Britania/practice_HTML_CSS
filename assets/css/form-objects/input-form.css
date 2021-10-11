@@ -9,8 +9,7 @@
 }
 
 .input-font-size {
-  --object-current-font-size: 11.23;
-  --object-goal-font-size: 11.23;
+  --object-font-size: 11.23px;
   font-size: var(--object-font-size);
 }
 
@@ -47,8 +46,7 @@ textarea.input-data {
 }
 
 .checkmark {
-  --object-current-size: 11.94;
-  --object-goal-size: 14.43;
+  --object-size: 11.94px;
 }
 
 .checkbox-text {
@@ -72,24 +70,29 @@ textarea.input-data {
   }
 
   .input-font-size {
-    --object-current-font-size: 11.23;
-    --object-goal-font-size: 14;
+    --object-font-size: 11.23px;
   }
 
   .checkmark {
-    --object-current-size: 14.43;
-    --object-goal-size: 18;
+    --object-size: 14.43px;
   }
 }
 
 @media screen and (min-width: 1336px) {
   .input-font-size {
-    --object-current-font-size: 14;
-    --object-goal-font-size: 19.9;
+    --object-font-size: 14px;
   }
   .checkmark {
-    --object-current-size: 18;
-    --object-goal-size: 25.58;
+    --object-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .input-font-size {
+    --object-font-size: 19.9px;
+  }
+  .checkmark {
+    --object-size: 25.58px;
   }
 }
 

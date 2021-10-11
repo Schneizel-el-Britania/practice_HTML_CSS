@@ -1,6 +1,5 @@
 .order-call-container {
-  --object-current-size: 231;
-  --object-goal-size: 165;
+  --object-size: 231px;
 
   width: 100%;
   height: var(--object-size);
@@ -29,14 +28,8 @@
 }
 
 .order-call-inner-container {
-  --object-current-size: 231;
-  --object-goal-size: 340;
-
-  --object-current-size-height: 134;
-  --object-goal-size-height: 114;
-  --object-size-height: calc(
-    (var(--object-current-size-height) * 1px) + (var(--object-goal-size-height) - var(--object-current-size-height)) * ((100vw - var(--min-width)) / var(--resolution-change))
-  );
+  --object-size: 231px;
+  --object-size-height: 134px;
 
   width: var(--object-size);
   height: var(--object-size-height);
@@ -60,26 +53,22 @@
 }
 
 .order-call-inner-container > .title-heading {
-  --object-current-font-size: 18;
-  --object-goal-font-size: 18;
+  --object-font-size: 18px;
 
   margin: 0;
   padding: 0;
 }
 .order-call-inner-container > .text-content {
-  --object-current-font-size: 11;
-  --object-goal-font-size: 11;
+  --object-font-size: 11px;
 
   width: 80%;
   margin: 3.5% 0;
   text-align: left;
 }
 .order-call-inner-container > .btn {
-  --object-current-font-size: 10;
-  --object-goal-font-size: 11;
+  --object-font-size: 10px;
 
-  --object-current-size: 4;
-  --object-goal-size: 6;
+  --object-size: 4;
   padding: var(--object-size) calc(var(--object-size) * 10);
   margin-bottom: 3%;
 }
@@ -94,18 +83,14 @@
 
 @media screen and (min-width: 768px) {
   .order-call-container {
-    --object-current-size: 165;
-    --object-goal-size: 165;
+    --object-size: 165px;
   }
   .order-call-container::after {
     clip-path: polygon(0 0, 25% 0, 55% 100%, 0% 100%);
   }
   .order-call-inner-container {
-    --object-current-size: 340;
-    --object-goal-size: 280;
-    
-    --object-current-size-height: 114;
-    --object-goal-size-height: 125;
+    --object-size: 340px;
+    --object-size-height: 114px;
 
     top: 50%;
     left: 3%;
@@ -120,69 +105,69 @@
     margin: 3% 0;
   }
   .order-call-inner-container > .btn {
-    --object-current-font-size: 11;
-    --object-goal-font-size: 11;
-  
-    --object-current-size: 4.5;
-    --object-goal-size: 5;
+    --object-font-size: 11px;
+    --object-size: 4.5px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .order-call-container {
-    --object-current-size: 165;
-    --object-goal-size: 200;
+    --object-size: 165px;
   }
   .order-call-inner-container {
-    --object-current-size: 280;
-    --object-goal-size: 309;
-    
-    --object-current-size-height: 125;
-    --object-goal-size-height: 147;
+    --object-size: 280px;
+    --object-size-height: 125px;
   }
   .order-call-inner-container > .title-heading {
-    --object-current-font-size: 18;
-    --object-goal-font-size: 20;
+    --object-font-size: 18px;
   }
   .order-call-inner-container > .text-content {
-    --object-current-font-size: 11;
-    --object-goal-font-size: 13;
+    --object-font-size: 11px;
   }
   .order-call-inner-container > .btn {
-    --object-current-font-size: 11;
-    --object-goal-font-size: 13;
-  
-    --object-current-size: 5;
-    --object-goal-size: 5.5;
+    --object-font-size: 11px;
+    --object-size: 5px;
   }
 }
 
 @media screen and (min-width: 1336px) {
   .order-call-container {
-    --object-current-size: 200;
-    --object-goal-size: 284;
+    --object-size: 200px;
   }
   .order-call-inner-container {
-    --object-current-size: 309;
-    --object-goal-size: 450;
-    
-    --object-current-size-height: 147;
-    --object-goal-size-height: 213;
+    --object-size: 309px;
+    --object-size-height: 147px;
   }
 
   .order-call-inner-container > .title-heading {
-    --object-current-font-size: 20;
-    --object-goal-font-size: 28.43;
+    --object-font-size: 20px;
   }
   .order-call-inner-container > .text-content {
-    --object-current-font-size: 13;
-    --object-goal-font-size: 18.48;
+    --object-font-size: 13px;
   }
   .order-call-inner-container > .btn {
-    --object-current-font-size: 13;
-    --object-goal-font-size: 18.48;
-  
-    --object-current-size: 5.5;
-    --object-goal-size: 10;
+    --object-font-size: 13px;
+    --object-size: 5.5px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .order-call-container {
+    --object-size: 284px;
+  }
+  .order-call-inner-container {
+    --object-size: 450px;
+    --object-size-height: 213px;
+  }
+
+  .order-call-inner-container > .title-heading {
+    --object-font-size: 28.43px;
+  }
+  .order-call-inner-container > .text-content {
+    --object-font-size: 18.48px;
+  }
+  .order-call-inner-container > .btn {
+    --object-font-size: 18.48px;
+    --object-size: 10px;
   }
 }

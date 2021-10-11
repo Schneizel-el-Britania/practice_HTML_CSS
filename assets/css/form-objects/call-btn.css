@@ -4,11 +4,9 @@
 
 @media screen and (min-width: 768px) {
   .call-btn {
-    --object-current-font-size: 6.41;
-    --object-goal-font-size: 6.41;
+    --object-font-size: 6.41px;
+    --object-size: 55.33px;
 
-    --object-current-size: 55.33;
-    --object-goal-size: 55.33;
     min-width: var(--object-size);
     height: var(--object-size);
     display: block;
@@ -28,11 +26,7 @@
     position: relative;
   }
   .call-btn::after {
-    --object-current-size: 26.46;
-    --object-goal-size: 26.46;
-    --object-size: calc(
-      (var(--object-current-size) * 1px) + (var(--object-goal-size) - var(--object-current-size)) * ((100vw - var(--min-width)) / var(--resolution-change))
-    );
+    --object-size: 26.46px;
 
     content: "";
     background-image: url(../../icons/call.png);
@@ -48,32 +42,34 @@
 
 @media screen and (min-width: 1024px) {
   .call-btn {
-    --object-current-font-size: 6.41;
-    --object-goal-font-size: 8;
-
-    --object-current-size: 55.33;
-    --object-goal-size: 69;
+    --object-font-size: 6.41px;
+    --object-size: 55.33px;
 
     position: absolute;
     right: 0;
     top: 90%;
   }
   .call-btn::after {
-    --object-current-size: 26.46;
-    --object-goal-size: 33;
+    --object-size: 26.46px;
   }
 }
 
 @media screen and (min-width: 1336px) {
   .call-btn {
-    --object-current-font-size: 8;
-    --object-goal-font-size: 11.34;
-
-    --object-current-size: 69;
-    --object-goal-size: 98.08;
+    --object-font-size: 8px;
+    --object-size: 69px;
   }
   .call-btn::after {
-    --object-current-size: 33;
-    --object-goal-size: 46.91;
+    --object-size: 33px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .call-btn {
+    --object-goal-font-size: 11.34px;
+    --object-goal-size: 98.08px;
+  }
+  .call-btn::after {
+    --object-goal-size: 46.91px;
   }
 }

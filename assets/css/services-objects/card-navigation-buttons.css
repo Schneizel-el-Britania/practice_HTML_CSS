@@ -4,11 +4,7 @@
   }
   .card:nth-child(2)::before,
   .card:nth-child(2)::after {
-    --object-current-size: 24.85;
-    --object-goal-size: 24.85;
-    --object-size: calc(
-      (var(--object-current-size) * 1px) + (var(--object-goal-size) - var(--object-current-size)) * ((100vw - var(--min-width)) / var(--resolution-change))
-    );
+    --object-size: 24.85px;
 
     content: "";
     width: var(--object-size);
@@ -31,11 +27,7 @@
 @media screen and (min-width: 768px) {
   .card:nth-child(1)::before,
   .card:nth-child(3)::after {
-    --object-current-size: 24.85;
-    --object-goal-size: 33.11;
-    --object-size: calc(
-      (var(--object-current-size) * 1px) + (var(--object-goal-size) - var(--object-current-size)) * ((100vw - var(--min-width)) / var(--resolution-change))
-    );
+    --object-size: 24.85px;
 
     content: "";
     width: var(--object-size);
@@ -58,8 +50,7 @@
 @media screen and (min-width: 1024px) {
   .card:nth-child(1)::before,
   .card:nth-child(3)::after {
-    --object-current-size: 33.11;
-    --object-goal-size: 40.21;
+    --object-size: 33.11px;
     right: -20%;
   }
   .card:nth-child(1)::before {
@@ -70,7 +61,13 @@
 @media screen and (min-width: 1336px) {
   .card:nth-child(1)::before,
   .card:nth-child(3)::after {
-    --object-current-size: 40.21;
-    --object-goal-size: 57.17;
+    --object-size: 40.21px;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .card:nth-child(1)::before,
+  .card:nth-child(3)::after {
+    --object-size: 57.17px;
   }
 }

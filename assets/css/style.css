@@ -3,30 +3,8 @@
   --text-color: #414141;
   --border-radius: 5px;
 
-  --resolution-change: calc(768 - 320);
-  --min-width: 320px;
-
   font-family: "Poppins", sans-serif;
   font-size: 13px;
-}
-
-body * {
-  /****-Dynamic-Font-Size-****/
-  --object-current-font-size: 13;
-  --object-goal-font-size: 13;
-
-  --object-font-size: calc(
-    (var(--object-current-font-size) * 1px) + (var(--object-goal-font-size) - var(--object-current-font-size)) *
-      ((100vw - var(--min-width)) / var(--resolution-change))
-  );
-
-  /****-Dynamic-Size-****/
-  --object-current-size: 10;
-  --object-goal-size: 10;
-
-  --object-size: calc(
-    (var(--object-current-size) * 1px) + (var(--object-goal-size) - var(--object-current-size)) * ((100vw - var(--min-width)) / var(--resolution-change))
-  );
 }
 
 .spaces {
@@ -39,8 +17,7 @@ body * {
 }
 
 .title-heading {
-  --object-current-font-size: 23;
-  --object-goal-font-size: 23;
+  --object-font-size: 23px;
 
   padding-bottom: 3vw;
   margin-bottom: calc(var(--title-header-font-size) * 0.6);
@@ -55,8 +32,7 @@ body * {
 }
 
 .text-content {
-  --object-current-font-size: 12.83;
-  --object-goal-font-size: 12.83;
+  --object-font-size: 12.83px;
 
   color: var(--text-color);
   font-size: var(--object-font-size);
@@ -65,11 +41,8 @@ body * {
 }
 
 .btn {
-  --object-current-font-size: 7.74;
-  --object-goal-font-size: 9.6;
-
-  --object-current-size: 8;
-  --object-goal-size: 10;
+  --object-font-size: 7.74px;
+  --object-size: 8px;
 
   width: fit-content;
   height: fit-content;
@@ -88,80 +61,68 @@ body * {
 }
 
 @media screen and (min-width: 768px) {
-  :root {
-    --resolution-change: calc(1024 - 768);
-    --min-width: 768px;
-  }
 
   .padding-top{
     padding-top: 6vw;
   }
 
   .title-heading {
-    --object-current-font-size: 23;
-    --object-goal-font-size: 28.06;
+    --object-font-size: 23px;
 
     padding-bottom: 1.5vw;
   }
   .btn {
-    --object-current-font-size: 9.6;
-    --object-goal-font-size: 11.23;
-  
-    --object-current-size: 10;
-    --object-goal-size: 12;
+    --object-font-size: 9.6px;
+    --object-size: 10px;
   }
 }
 @media screen and (min-width: 1024px) {
-  :root {
-    --resolution-change: calc(1336 - 1024);
-    --min-width: 1024px;
-  }
 
   .title-heading {
-    --object-current-font-size: 28.06;
-    --object-goal-font-size: 35;
+    --object-font-size: 28.06px;
   }
 
   .text-content {
-    --object-current-font-size: 12.83;
-    --object-goal-font-size: 16;
+    --object-font-size: 12.83px;
   }
 
   .btn {
-    --object-current-font-size: 11.23;
-    --object-goal-font-size: 14;
-  
-    --object-current-size: 12;
-    --object-goal-size: 14;
+    --object-font-size: 11.23px;
+    --object-size: 12px;
   }
 }
 
 @media screen and (min-width: 1336px) {
-  :root {
-    --resolution-change: calc(1920 - 1336);
-    --min-width: 1336px;
-  }
-
   .spaces {
     margin-left: 5vw;
     margin-right: 5vw;
   }
 
   .title-heading {
-    --object-current-font-size: 35;
-    --object-goal-font-size: 49.75;
+    --object-font-size: 35px;
   }
 
   .text-content {
-    --object-current-font-size: 16;
-    --object-goal-font-size: 22.74;
+    --object-font-size: 16px;
   }
 
   .btn {
-    --object-current-font-size: 14;
-    --object-goal-font-size: 19.9;
-  
-    --object-current-size: 14;
-    --object-goal-size: 16;
+    --object-font-size: 14px;
+    --object-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .title-heading {
+    --object-font-size: 49.75px;
+  }
+
+  .text-content {
+    --object-font-size: 22.74px;
+  }
+
+  .btn {
+    --object-font-size: 19.9px;
+    --object-size: 16px;
   }
 }
