@@ -33,13 +33,9 @@
 
   width: var(--object-size);
   height: var(--object-size-height);
-  padding: 3%;
-  padding-right: 0;
-  padding-bottom: 0;
 
   background-color: white;
   border-radius: var(--border-radius);
-  text-align: center;
 
   position: absolute;
   top: 80%;
@@ -56,29 +52,24 @@
   --object-font-size: 18px;
 
   margin: 0;
-  padding: 0;
+  padding-bottom: 0; 
+  padding-left: 5%;
+  padding-top: 5%;
 }
 .order-call-inner-container > .text-content {
   --object-font-size: 11px;
 
   width: 80%;
   margin: 3.5% 0;
-  text-align: left;
+  padding-left: 5%;
 }
 .order-call-inner-container > .btn {
   --object-font-size: 10px;
 
-  --object-size: 4;
+  --object-size: 4px;
   padding: var(--object-size) calc(var(--object-size) * 10);
+  margin: auto;
   margin-bottom: 3%;
-}
-
-@media screen and (min-width: 550px) {
-  .order-call-inner-container {
-    padding: 2%;
-    padding-right: 0;
-    padding-bottom: 0;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -97,8 +88,6 @@
     transform: translate(0, -50%);
     margin-left: 0;
     margin-right: 0;
-
-    text-align: left;
   }
 
   .order-call-inner-container > .text-content {
