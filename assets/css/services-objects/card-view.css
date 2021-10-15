@@ -18,7 +18,7 @@
   position: relative;
 }
 
-.secondary {
+.secondary-card { /*TODO ВЫНЕСТИ */
   display: none;
 }
 
@@ -87,7 +87,7 @@
     margin-left: 3%;
   }
 
-  .secondary {
+  .secondary-card {
     --secondary-width: calc(var(--object-size) * 0.95);
 
     width: var(--secondary-width);

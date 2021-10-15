@@ -1,0 +1,60 @@
+.card-control-container {
+  padding-bottom: 50px;
+}
+.card-navigation {
+  position: relative;
+}
+.card-navigation::before,
+.card-navigation::after {
+  --object-size: 24.85px;
+
+  content: "";
+  width: var(--object-size);
+  height: var(--object-size);
+  background-image: url(../../icons/card-nav-btn-right.png);
+  background-repeat: no-repeat;
+  background-size: var(--object-size);
+
+  position: absolute;
+  bottom: 0;
+  top: 500%;
+  right: 30%;
+}
+.card-navigation::before {
+  background-image: url(../../icons/card-nav-btn-left.png);
+  left: 30%;
+}
+
+@media screen and (min-width: 768px) {
+  .card-navigation::before,
+  .card-navigation::after {
+    --object-size: 24.85px;
+    top: -4000%;
+    left: 170%;
+  }
+  .card-navigation::before {
+    background-image: url(../../icons/card-nav-btn-left.png);
+    left: -80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card-navigation::before,
+  .card-navigation::after {
+    --object-size: 33.11px;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .card-navigation::before,
+  .card-navigation::after {
+    --object-size: 40.21px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .card-navigation::before,
+  .card-navigation::after {
+    --object-size: 57.17px;
+  }
+}

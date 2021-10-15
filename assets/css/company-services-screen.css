@@ -1,6 +1,6 @@
 @import url(./services-objects/card-view.css);
-@import url(./services-objects/card-navigation-buttons.css);
-@import url(./services-objects/card-navigation.css);
+@import url(./card-control-objects/card-navigation-buttons.css);
+@import url(./card-control-objects/card-navigation.css);
 
 .company-services > .row:nth-child(2) {
   text-align: center;
