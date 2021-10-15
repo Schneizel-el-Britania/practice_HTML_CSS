@@ -1,13 +1,8 @@
-.company-benefits .text-content {
-  text-align: center;
-}
-
 .benefits-cards-wrapper {
   padding-top: 3vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* justify-content: space-around; */
 }
 
 .benefit-card {

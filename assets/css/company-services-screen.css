@@ -2,9 +2,6 @@
 @import url(./services-objects/card-navigation-buttons.css);
 @import url(./services-objects/card-navigation.css);
 
-.company-services .text-content {
-  text-align: center;
-}
 .company-services > .row:nth-child(2) {
   text-align: center;
 }
