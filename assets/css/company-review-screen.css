@@ -1,0 +1,61 @@
+@import url(./review-objects/review-card.css);
+@import url(./card-control-objects/card-navigation-buttons.css);
+@import url(./card-control-objects/card-navigation.css);
+
+.reviews-card-container{
+  padding-top: 3vw;
+}
+
+.review-card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .card-navigation::before,
+  .card-navigation::after {
+    content: none;
+  }
+
+  .review-card:first-child::before,
+  .review-card:last-child::after {
+    --object-size: 24.85px;
+
+    content: "";
+    width: var(--object-size);
+    height: var(--object-size);
+    background-image: url(../icons/card-rev-nav-btn-right.png);
+    background-repeat: no-repeat;
+    background-size: var(--object-size);
+
+    position: absolute;
+    bottom: 0;
+    top: 40%;
+    left: 97%;
+  }
+  .review-card:first-child::before {
+    background-image: url(../icons/card-rev-nav-btn-left.png);
+    left: -3%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .review-card:first-child::before,
+  .review-card:last-child::after {
+    --object-size: 33.11px;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .review-card:first-child::before,
+  .review-card:last-child::after {
+    --object-size: 40.21px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .review-card:first-child::before,
+  .review-card:last-child::after {
+    --object-size: 57.17px;
+  }
+}

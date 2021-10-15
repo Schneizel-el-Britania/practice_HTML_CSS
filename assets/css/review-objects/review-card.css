@@ -1,7 +1,9 @@
-.reviw-card {
+.review-card {
   --card-padding: 4vw;
+  /* --card-padding: 5%; */
 
   padding: var(--card-padding);
+  margin: 1vw;
   box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   border-radius: var(--border-radius);
 
@@ -18,7 +20,7 @@
   letter-spacing: 2px;
 }
 
-.reviw-card-text {
+.review-card-text {
   --review-text-color: #696969;
   --object-font-size: 13.18px;
 
@@ -66,4 +68,45 @@
   color: var(--main-color);
   font-size: var(--object-font-size);
   font-weight: 600;
+}
+@media screen and (min-width: 1024px) {
+.review-card {
+  --card-padding: 2vw;
+}
+}
+
+@media screen and (min-width: 1336px) {
+  .rating {
+    --object-font-size: 20px;
+  }
+  .review-card-text {
+    --object-font-size: 19px;
+  }
+  .user-avatar {
+    --object-size: 53px;
+  }
+  .user-name {
+    --object-font-size: 18px;
+  }
+  .user-job {
+    --object-font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .rating {
+    --object-font-size: 30px;
+  }
+  .review-card-text {
+    --object-font-size: 27px;
+  }
+  .user-avatar {
+    --object-size: 75.33px;
+  }
+  .user-name {
+    --object-font-size: 25.58px;
+  }
+  .user-job {
+    --object-font-size: 18.5px;
+  }
 }
