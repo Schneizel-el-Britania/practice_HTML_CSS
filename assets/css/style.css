@@ -15,6 +15,9 @@
 .padding-top{
   padding-top: 6vw;
 }
+.align-header{
+  margin: auto;
+}
 
 .title-heading {
   --object-font-size: 23px;
@@ -37,8 +40,7 @@
   color: var(--text-color);
   font-size: var(--object-font-size);
   text-align: center;
-  letter-spacing: 0.5px;
-  line-height: 1.2;
+  line-height: calc( var(--object-font-size) * 1.2);
 }
 
 .btn {
