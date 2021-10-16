@@ -35,3 +35,15 @@
     columns: 1;
   }
 }
+
+@media screen and (min-width: 1336px) {
+  .footer-menu-list {
+    --footer-list-font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .footer-menu-list {
+    --footer-list-font-size: 25.6px;
+  }
+}
