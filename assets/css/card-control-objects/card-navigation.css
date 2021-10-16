@@ -1,7 +1,7 @@
 .card-navigation {
   --nav-items-color: #e8e2d5;
   --object-size: 199px;
-  
+
   width: var(--object-size);
   height: 3.33px;
   margin: auto;
@@ -20,6 +20,9 @@
 }
 .card-nav-item:first-child {
   background-color: var(--main-color);
+}
+.card-nav-item:hover {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
