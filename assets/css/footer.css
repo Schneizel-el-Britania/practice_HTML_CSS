@@ -1,8 +1,60 @@
 @import url(./footer-objects/footer-menu-list.css);
 
-.page-footer{
+.page-footer {
   --footer-bg-color: #243246;
 
   background-color: var(--footer-bg-color);
   color: white;
+}
+
+.footer-social-networks-links {
+  --object-size: 22px;
+}
+.footer-social-networks-links div {
+  width: var(--object-size);
+  height: var(--object-size);
+  display: inline-block;
+  
+  background-size: var(--object-size);
+  background-repeat: no-repeat;
+}
+.sn-link-1 {
+  background-image: url(../icons/yt-icon.png);
+}
+.sn-link-2 {
+  background-image: url(../icons/vk-icon.png);
+}
+.sn-link-3 {
+  background-image: url(../icons/inst-icon.png);
+}
+
+.footer-company-info,
+.footer-copyright{
+  text-align: center;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .page-footer{
+    position: relative;
+  }
+  .footer-copyright{
+    padding: 2vw;
+    position: absolute;
+    top: 0;
+  }
+  .footer-contact-info{
+    
+    padding: 2vw;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .footer-contact-data{
+    text-align: end;
+  }
 }
