@@ -1,19 +1,35 @@
-.footer-menu-list{
+.footer-menu-list {
+  --footer-list-font-size: 14.4px;
+
   text-align: center;
-  
+  z-index: 999;
 }
 .footer-menu-list li {
-  padding: 2vw 1vw;
   width: fit-content;
+  padding-bottom: 2vw;
+
+  font-size: var(--footer-list-font-size);
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-align: left;
 }
 
 .sub-list {
+  width: 90%;
   columns: 2;
 }
 
 @media screen and (min-width: 1024px) {
   .sub-list {
+    width: auto;
     display: inline-block;
+  }
+  .sub-list:first-child li {
+    margin-left: -80px;
+  }
+  .sub-list li {
+    margin-right: 30px;
   }
   .sub-list:last-child {
     columns: 1;
