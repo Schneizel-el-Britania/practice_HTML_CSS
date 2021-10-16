@@ -1,0 +1,16 @@
+.footer-menu-list li {
+  padding: 2vw 1vw;
+}
+
+.sub-list {
+  columns: 2;
+}
+
+@media screen and (min-width: 1024px) {
+  .sub-list {
+    display: inline-block;
+  }
+  .sub-list:last-child {
+    columns: 1;
+  }
+}

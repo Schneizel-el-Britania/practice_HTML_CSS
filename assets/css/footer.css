@@ -1,0 +1,8 @@
+@import url(./footer-objects/footer-menu-list.css);
+
+.page-footer{
+  --footer-bg-color: #243246;
+
+  background-color: var(--footer-bg-color);
+  color: white;
+}
