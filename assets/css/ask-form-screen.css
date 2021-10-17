@@ -7,9 +7,7 @@
   --border-color: #c4c4c4;
 }
 
-.ask-form .title-heading {
-  text-align: left;
-}
+.ask-form .title-heading,
 .ask-form .text-content {
   text-align: left;
 }
@@ -32,12 +30,10 @@
     margin-top: 0.5vw;
     border-top: 1px solid var(--border-color);
   }
-
 }
 
 @media screen and (min-width: 1024px) {
   .ask-form .text-content {
     width: 90%;
   }
-
 }
