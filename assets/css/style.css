@@ -12,41 +12,39 @@
   margin-right: 3vw;
 }
 
-.padding-top{
+.padding-top {
   padding-top: 6vw;
 }
-.align-header{
+.align-header {
   margin: auto;
 }
 
 .title-heading {
-  --object-font-size: 23px;
+  --title-heading-font-size: 23px;
 
   padding-bottom: 3vw;
   color: var(--main-color);
-  font-family: 'Trajan Pro 3', serif;
-  font-size: var(--object-font-size);
-  line-height: calc(var(--object-font-size) * 1.3);
+  font-family: "Trajan Pro 3", serif;
+  font-size: var(--title-heading-font-size);
+  line-height: calc(var(--title-heading-font-size) * 1.3);
   text-align: center;
-  text-transform: uppercase;
 }
 
 .text-content {
-  --object-font-size: 12.83px;
+  --text-content-font-size: 13px;
 
   color: var(--text-color);
-  font-size: var(--object-font-size);
+  font-size: var(--text-content-font-size);
   text-align: center;
-  line-height: calc( var(--object-font-size) * 1.2);
+  line-height: calc(var(--text-content-font-size) * 1.2);
 }
 
 .btn {
-  --object-font-size: 7.74px;
-  --object-size: 8px;
+  --btn-size: 8px;
 
   width: fit-content;
   height: fit-content;
-  padding: var(--object-size) calc(var(--object-size) * 2);
+  padding: var(--btn-size) calc(var(--btn-size) * 2);
   display: block;
 
   border: none;
@@ -55,39 +53,33 @@
   background-color: var(--main-color);
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.17);
 
-  font-size: var(--object-font-size);
+  font-size: var(--btn-size);
   font-family: inherit;
   font-weight: 600;
 }
 
 @media screen and (min-width: 768px) {
-
-  .padding-top{
+  .padding-top {
     padding-top: 6vw;
   }
-
   .title-heading {
     --object-font-size: 23px;
     padding-bottom: 1.5vw;
   }
   .btn {
-    --object-font-size: 9.6px;
-    --object-size: 10px;
+    --btn-size: 10px;
   }
 }
+
 @media screen and (min-width: 1024px) {
-
   .title-heading {
-    --object-font-size: 28.06px;
+    --object-font-size: 28px;
   }
-
   .text-content {
-    --object-font-size: 12.83px;
+    --object-font-size: 13px;
   }
-
   .btn {
-    --object-font-size: 11.23px;
-    --object-size: 12px;
+    --btn-size: 12px;
   }
 }
 
@@ -96,32 +88,25 @@
     margin-left: 5vw;
     margin-right: 5vw;
   }
-
   .title-heading {
-    --object-font-size: 35px;
+    --title-heading-font-size: 35px;
   }
-
   .text-content {
-    --object-font-size: 16px;
+    --text-content-font-size: 16px;
   }
-
   .btn {
-    --object-font-size: 14px;
-    --object-size: 14px;
+    --btn-size: 14px;
   }
 }
 
 @media screen and (min-width: 1920px) {
   .title-heading {
-    --object-font-size: 49.75px;
+    --title-heading-font-size: 50px;
   }
-
   .text-content {
-    --object-font-size: 22.74px;
+    --text-content-font-size: 23px;
   }
-
   .btn {
-    --object-font-size: 19.9px;
-    --object-size: 16px;
+    --btn-size: 16px;
   }
 }

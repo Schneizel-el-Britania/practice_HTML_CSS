@@ -1,48 +1,56 @@
 .menu-list {
   display: none;
 }
+.menu-list > li {
+  position: relative;
+}
+
+.list-arrow {
+  height: 100%;
+  visibility: hidden;
+
+  background-image: url(../../icons/list-arrow.png);
+  background-repeat: no-repeat;
+  background-size: var(--menu-list-font-size);
+  background-position: center;
+
+  position: absolute;
+  left: 100%;
+  right: -50%;
+}
 
 @media screen and (min-width: 1024px) {
   .menu-list {
-    --object-font-size: 14.8px;
+    --menu-list-font-size: 15px;
 
     padding: 0.5vw 1.5vw;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    font-size: var(--object-font-size);
+    font-size: var(--menu-list-font-size);
     font-weight: 700;
     text-transform: uppercase;
   }
-  .list-arrow-icon {
-    height: calc(var(--object-font-size) * 0.7);
-    padding-left: 0.5vw;
-    vertical-align: middle;
+  
+  .menu-list > li:nth-child(1):hover .list-arrow,
+  .menu-list > li:nth-child(2):hover .list-arrow {
+    visibility: visible;
   }
-  .list-search-icon {
-    --object-size: 19.74px;
 
-    width: var(--object-size);
-    height: var(--object-size);
+  .list-search-icon {
+    width: calc(var(--menu-list-font-size) / 0.75);
   }
 }
 
 @media screen and (min-width: 1336px) {
   .menu-list {
-    --object-font-size: 18px;
-  }
-  .list-search-icon {
-    --object-size: 24px;
+    --menu-list-font-size: 18px;
   }
 }
 
-@media screen and (min-width: 1336px) {
+@media screen and (min-width: 1920px) {
   .menu-list {
-    --object-font-size: 25.58px;
-  }
-  .list-search-icon {
-    --object-size: 34.11px;
+    --menu-list-font-size: 26px;
   }
 }
