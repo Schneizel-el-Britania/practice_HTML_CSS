@@ -1,6 +1,9 @@
 .checkbox-container {
+  --checkmark-size: 1rem;
+  --checkbox-border-radius: calc(var(--checkmark-size) / 3.5);
+
   height: fit-content;
-  padding-left: 30px;
+  padding-left: calc(var(--checkmark-size) * 2);
   margin-bottom: 12px;
 
   display: block;
@@ -13,7 +16,6 @@
   user-select: none;
 }
 
-/* Hide the browser's default checkbox */
 .checkbox-container input {
   position: absolute;
   opacity: 0;
@@ -22,12 +24,9 @@
   width: 0;
 }
 
-/* Create a custom checkbox */
 .checkmark {
-  --checkbox-border-radius: calc(var(--object-size) / 3.57142857143);
-
-  width: var(--object-size);
-  height: var(--object-size);
+  width: var(--checkmark-size);
+  height: var(--checkmark-size);
   position: absolute;
   top: 50%;
   left: 0;

@@ -66,11 +66,11 @@
 
   .contact-number p:first-child::before {
     content: "";
-    width: var(--object-font-size);
-    height: var(--object-font-size);
+    width: var(--number-font-size);
+    height: var(--number-font-size);
 
     background-image: url(../icons/header-phone-icon.png);
-    background-size: calc(var(--object-font-size) * 0.75);
+    background-size: calc(var(--number-font-size) * 0.75);
     background-repeat: no-repeat;
     background-position: center;
 
@@ -86,24 +86,20 @@
   .contact-number p:last-child {
     text-align: end;
     font-size: var(--number-desc-font-size);
-    font-weight: 600;
   }
   .contact-number p:last-child::first-letter {
     text-transform: uppercase;
   }
 
   .contact-me {
-    padding: 15px 35px;
+    padding: 1vw 2.5vw;
 
     border: 2px solid white;
     border-radius: var(--border-radius);
     background-color: inherit;
     color: inherit;
-
-    font-weight: 600;
     font-family: inherit;
     font-size: var(--contact-font-size);
-    text-transform: uppercase;
   }
 
   .auth img {
@@ -115,8 +111,6 @@
   .auth {
     padding-top: 5px;
     font-size: var(--auth-font-size);
-    font-weight: 600;
-    text-transform: uppercase;
     position: relative;
     vertical-align: bottom;
   }
@@ -126,7 +120,7 @@
   .page-header {
     --main-heading-font-size: 32px;
     --number-font-size: 22px;
-    --number-desc-font-size: 14px;
+    --number-desc-font-size: 13px;
     --contact-font-size: 14px;
     --auth-font-size: 11px;
   }
@@ -145,11 +139,13 @@
   .page-header {
     --main-heading-font-size: 45px;
     --number-font-size: 31px;
-    --number-desc-font-size: 20px;
     --contact-font-size: 20px;
     --auth-font-size: 19px;
   }
   .header-wrapper {
     width: 45vw;
+  }
+  .contact-number p:last-child {
+    text-align: center;
   }
 }
