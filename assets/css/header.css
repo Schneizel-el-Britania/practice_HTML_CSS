@@ -1,8 +1,9 @@
 .page-header {
-  --header-elements-size: 10vw;
+  --header-elements-size: 70px;
+  --main-heading-font-size: 18px;
 
-  margin-top: 2vw;
-  padding: 0 3vw;
+  margin-top: 0.5vw;
+  padding: 0 4vw;
 
   display: flex;
   justify-content: space-between;
@@ -11,47 +12,44 @@
   border-radius: var(--border-radius);
   background-color: var(--main-color);
   color: white;
-  white-space: nowrap;
 }
+
 .header-wrapper {
   display: none;
 }
 
 .main-heading {
-  --object-font-size: 18px;
-
   height: var(--header-elements-size);
   line-height: var(--header-elements-size);
+  font-size: var(--main-heading-font-size);
   font-weight: 700;
-  font-size: var(--object-font-size);
 }
 .main-heading::first-letter {
   text-transform: uppercase;
 }
 
-.menu-btn {
-  min-width: 64px;
-  width: var(--header-elements-size);
-  min-height: 64px;
-  height: var(--header-elements-size);
-}
 .menu-btn > img {
-  min-width: 64px;
-  width: inherit;
-  min-height: 64px;
-  height: inherit;
+  width: var(--header-elements-size);
+  height: var(--header-elements-size);
 }
 
 @media screen and (min-width: 768px) {
-  .main-heading {
-    --object-font-size: 27.17px;
+  .page-header {
+    --header-elements-size: 8vw;
+    --main-heading-font-size: 27px;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  .page-header {
+    --number-font-size: 18px;
+    --number-desc-font-size: 12px;
+    --contact-font-size: 12px;
+    --auth-font-size: 9px;
+  }
 
   .header-wrapper {
-    width: 55vw;
+    width: 48vw;
     height: var(--header-elements-size);
     display: flex;
     align-items: center;
@@ -66,30 +64,28 @@
     position: relative;
   }
 
-  .contact-number::before {
+  .contact-number p:first-child::before {
     content: "";
-    background-image: url(../icons/phone.png);
+    width: var(--object-font-size);
+    height: var(--object-font-size);
+
+    background-image: url(../icons/header-phone-icon.png);
+    background-size: calc(var(--object-font-size) * 0.75);
     background-repeat: no-repeat;
-    background-size: calc(var(--header-font-size) * 1.5);
+    background-position: center;
+
     position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: -8%;
+    left: -12%;
   }
 
   .contact-number p:first-child {
-    --object-font-size: 18.68px;
-
     margin-bottom: 4%;
-    font-size: var(--object-font-size);
+    font-size: var(--number-font-size);
     font-weight: 700;
   }
   .contact-number p:last-child {
-    --object-font-size: 11.89px;
-
     text-align: end;
-    font-size: var(--object-font-size);
+    font-size: var(--number-desc-font-size);
     font-weight: 600;
   }
   .contact-number p:last-child::first-letter {
@@ -97,8 +93,6 @@
   }
 
   .contact-me {
-    --object-font-size: 11.89px;
-
     padding: 15px 35px;
 
     border: 2px solid white;
@@ -108,71 +102,54 @@
 
     font-weight: 600;
     font-family: inherit;
-    font-size: var(--object-font-size);
+    font-size: var(--contact-font-size);
     text-transform: uppercase;
   }
 
   .auth img {
     margin: auto;
     display: block;
-    width: 2vw;
+    width: 1.8vw;
   }
 
-  .auth p {
-    --object-font-size: 9.4px;
-
+  .auth {
     padding-top: 5px;
-
+    font-size: var(--auth-font-size);
     font-weight: 600;
-    font-size: var(--object-font-size);
     text-transform: uppercase;
+    position: relative;
+    vertical-align: bottom;
   }
 }
 
 @media screen and (min-width: 1336px) {
-  .main-heading {
-    --object-font-size: 32px;
+  .page-header {
+    --main-heading-font-size: 32px;
+    --number-font-size: 22px;
+    --number-desc-font-size: 14px;
+    --contact-font-size: 14px;
+    --auth-font-size: 11px;
   }
-  .header-wrapper {
-    width: 50vw;
-  }
-  .contact-number p:first-child {
-    --object-font-size: 22px;
-  }
-  .contact-number p:last-child {
-    --object-font-size: 14px;
-  }
-  .contact-me {
-    --object-font-size: 14px;
-  }
-  .auth p {
-    --object-font-size: 11.08px;
-  }
-}
-
-@media screen and (min-width: 1500px) {
   .header-wrapper {
     width: 45vw;
   }
 }
 
+@media screen and (min-width: 1500px) {
+  .header-wrapper {
+    width: 38vw;
+  }
+}
+
 @media screen and (min-width: 1920px) {
-  .main-heading {
-    --object-font-size: 45.48px;
+  .page-header {
+    --main-heading-font-size: 45px;
+    --number-font-size: 31px;
+    --number-desc-font-size: 20px;
+    --contact-font-size: 20px;
+    --auth-font-size: 19px;
   }
   .header-wrapper {
-    width: 50vw;
-  }
-  .contact-number p:first-child {
-    --object-font-size: 31.27px;
-  }
-  .contact-number p:last-child {
-    --object-font-size: 19.9px;
-  }
-  .contact-me {
-    --object-font-size: 19.9px;
-  }
-  .auth p {
-    --object-font-size: 19.35px;
+    width: 45vw;
   }
 }
