@@ -3,7 +3,7 @@
   --text-color: #414141;
   --border-radius: 5px;
 
-  font-family: "Poppins", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-size: 13px;
 }
 
@@ -23,12 +23,9 @@
   --object-font-size: 23px;
 
   padding-bottom: 3vw;
-  /* margin-bottom: calc(var(--object-font-size) * 0.6); */
-
   color: var(--main-color);
-  font-family: "Cinzel", serif;
+  font-family: 'Trajan Pro 3', serif;
   font-size: var(--object-font-size);
-  letter-spacing: 1px;
   line-height: calc(var(--object-font-size) * 1.3);
   text-align: center;
   text-transform: uppercase;
