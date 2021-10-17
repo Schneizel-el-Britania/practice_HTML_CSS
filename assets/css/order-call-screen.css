@@ -1,8 +1,10 @@
 .order-call-container {
-  --object-size: 231px;
+  --order-call-height: 231px;
+  --title-heading-font-size: 18px;
+  --text-content-font-size: 11px;
+  --btn-size: 10px;
 
-  width: 100%;
-  height: var(--object-size);
+  height: var(--order-call-height);
   margin-top: 6vw;
 
   border-radius: var(--border-radius);
@@ -16,147 +18,101 @@
 .order-call-container::after {
   content: "";
   background-color: var(--main-color);
-
+  clip-path: polygon(0 0, 35% 0, 85% 100%, 0% 100%);
+  opacity: 60%;
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   z-index: 1;
-  opacity: 60%;
-  clip-path: polygon(0 0, 35% 0, 85% 100%, 0% 100%);
 }
 
 .order-call-inner-container {
-  --object-size: 231px;
-  --object-size-height: 134px;
+  width: 70vw;
+  height: 60%;
+  margin: 0 auto;
+  padding: 3.5vw;
 
-  width: var(--object-size);
-  height: var(--object-size-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   background-color: white;
-  border-radius: var(--border-radius);
+  border-radius: calc(var(--border-radius) * 2);
 
+  transform: translate(0, -80%);
   position: absolute;
   top: 80%;
   left: 0;
   right: 0;
-  transform: translate(0, -80%);
-  margin-left: auto;
-  margin-right: auto;
-
   z-index: 2;
 }
 
 .order-call-inner-container > .title-heading {
-  --object-font-size: 18px;
-
-  margin: 0;
-  padding-bottom: 0; 
-  padding-left: 5%;
-  padding-top: 5%;
+  width: fit-content;
+  padding: 0;
 }
-.order-call-inner-container > .text-content {
-  --object-font-size: 11px;
 
-  width: 80%;
-  margin: 3.5% 0;
-  padding-left: 5%;
-}
 .order-call-inner-container > .btn {
-  --object-font-size: 10px;
-
-  --object-size: 4px;
-  padding: var(--object-size) calc(var(--object-size) * 10);
-  margin: auto;
-  margin-bottom: 3%;
+  padding: 3.5% 25%;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
   .order-call-container {
-    --object-size: 165px;
+    --order-call-height: 165px;
+    --btn-size: 11px;
   }
   .order-call-container::after {
     clip-path: polygon(0 0, 25% 0, 55% 100%, 0% 100%);
   }
+
   .order-call-inner-container {
-    --object-size: 340px;
-    --object-size-height: 114px;
+    width: fit-content;
+    height: 70%;
+    padding: 2vw;
+    margin: 0;
 
     top: 50%;
     left: 3%;
     transform: translate(0, -50%);
-    margin-left: 0;
-    margin-right: 0;
   }
 
   .order-call-inner-container > .text-content {
-    margin: 3% 0;
+    width: 25vw;
   }
   .order-call-inner-container > .btn {
-    --object-font-size: 11px;
-    --object-size: 4.5px;
+    margin: 0;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .order-call-container {
-    --object-size: 165px;
+    --order-call-height: 165px;
   }
   .order-call-inner-container {
-    --object-size: 280px;
-    --object-size-height: 125px;
-  }
-  .order-call-inner-container > .title-heading {
-    --object-font-size: 18px;
+    height: 80%;
   }
   .order-call-inner-container > .text-content {
-    --object-font-size: 11px;
-  }
-  .order-call-inner-container > .btn {
-    --object-font-size: 11px;
-    --object-size: 5px;
+    width: 20vw;
   }
 }
 
 @media screen and (min-width: 1336px) {
   .order-call-container {
-    --object-size: 200px;
-  }
-  .order-call-inner-container {
-    --object-size: 309px;
-    --object-size-height: 147px;
-  }
-
-  .order-call-inner-container > .title-heading {
-    --object-font-size: 20px;
-  }
-  .order-call-inner-container > .text-content {
-    --object-font-size: 13px;
-  }
-  .order-call-inner-container > .btn {
-    --object-font-size: 13px;
-    --object-size: 5.5px;
+    --order-call-height: 200px;
+    --title-heading-font-size: 20px;
+    --text-content-font-size: 13px;
+    --btn-size: 13px;
   }
 }
 
 @media screen and (min-width: 1920px) {
   .order-call-container {
-    --object-size: 284px;
-  }
-  .order-call-inner-container {
-    --object-size: 450px;
-    --object-size-height: 213px;
-  }
-
-  .order-call-inner-container > .title-heading {
-    --object-font-size: 28.43px;
-  }
-  .order-call-inner-container > .text-content {
-    --object-font-size: 18.48px;
-  }
-  .order-call-inner-container > .btn {
-    --object-font-size: 18.48px;
-    --object-size: 10px;
+    --order-call-height: 284px;
+    --title-heading-font-size: 28px;
+    --text-content-font-size: 18px;
+    --btn-size: 18px;
   }
 }

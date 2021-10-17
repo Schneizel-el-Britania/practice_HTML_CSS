@@ -5,6 +5,10 @@
 
   font-family: "Gilroy", sans-serif;
   font-size: 13px;
+
+  --title-heading-font-size: 23px;
+  --text-content-font-size: 13px;
+  --btn-size: 8px;
 }
 
 .spaces {
@@ -20,8 +24,6 @@
 }
 
 .title-heading {
-  --title-heading-font-size: 23px;
-
   padding-bottom: 3vw;
   color: var(--main-color);
   font-family: "Trajan Pro 3", serif;
@@ -31,8 +33,6 @@
 }
 
 .text-content {
-  --text-content-font-size: 13px;
-
   color: var(--text-color);
   font-size: var(--text-content-font-size);
   text-align: center;
@@ -40,11 +40,9 @@
 }
 
 .btn {
-  --btn-size: 8px;
-
   width: fit-content;
   height: fit-content;
-  padding: var(--btn-size) calc(var(--btn-size) * 2);
+  padding: 2% 6%;
   display: block;
 
   border: none;
@@ -59,54 +57,42 @@
 }
 
 @media screen and (min-width: 768px) {
+  :root {
+    --title-heading-font-size: 23px;
+    --btn-size: 10px;
+  }
   .padding-top {
     padding-top: 6vw;
   }
   .title-heading {
-    --object-font-size: 23px;
     padding-bottom: 1.5vw;
-  }
-  .btn {
-    --btn-size: 10px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .title-heading {
-    --object-font-size: 28px;
-  }
-  .text-content {
-    --object-font-size: 13px;
-  }
-  .btn {
+  :root {
+    --title-heading-font-size: 28px;
+    --text-content-font-size: 13px;
     --btn-size: 12px;
   }
 }
 
 @media screen and (min-width: 1336px) {
+  :root {
+    --title-heading-font-size: 35px;
+    --text-content-font-size: 16px;
+    --btn-size: 14px;
+  }
   .spaces {
     margin-left: 5vw;
     margin-right: 5vw;
   }
-  .title-heading {
-    --title-heading-font-size: 35px;
-  }
-  .text-content {
-    --text-content-font-size: 16px;
-  }
-  .btn {
-    --btn-size: 14px;
-  }
 }
 
 @media screen and (min-width: 1920px) {
-  .title-heading {
+  :root {
     --title-heading-font-size: 50px;
-  }
-  .text-content {
     --text-content-font-size: 23px;
-  }
-  .btn {
     --btn-size: 16px;
   }
 }

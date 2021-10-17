@@ -1,5 +1,6 @@
 .checkbox-container {
   --checkmark-size: 1rem;
+  --checkbox-font-size: 1rem;
   --checkbox-border-radius: calc(var(--checkmark-size) / 3.5);
 
   height: fit-content;
@@ -41,6 +42,12 @@
 
 .checkbox-container input:checked ~ .checkmark {
   background-color: var(--main-color);
+}
+
+.checkbox-text {
+  font-size: var(--checkbox-font-size);
+  color: var(--checkbox-text-color);
+  line-height: calc(var(--checkbox-font-size) * 1.2);
 }
 
 @media (pointer: fine) {

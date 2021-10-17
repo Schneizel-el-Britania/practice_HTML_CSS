@@ -42,16 +42,16 @@ textarea.input-data {
 
 .checkbox-container {
   --checkmark-size: 12px;
-}
-
-.checkbox-text {
-  color: var(--checkbox-text-color);
-  line-height: 1.2;
+  --checkbox-font-size: 8px;
 }
 
 @media screen and (min-width: 768px) {
   .input-form {
     --margin-top: 20px;
+  }
+
+  .checkbox-container {
+    --checkbox-font-size: 10px;
   }
 }
 
@@ -75,6 +75,7 @@ textarea.input-data {
   }
   .checkbox-container {
     --checkmark-size: 18px;
+    --checkbox-font-size: 14px;
   }
 }
 
@@ -84,5 +85,6 @@ textarea.input-data {
   }
   .checkbox-container {
     --checkmark-size: 26px;
+    --checkbox-font-size: 20px;
   }
 }
