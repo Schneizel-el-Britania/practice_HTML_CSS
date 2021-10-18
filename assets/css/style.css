@@ -3,12 +3,12 @@
   --text-color: #414141;
   --border-radius: 5px;
 
-  font-family: "Gilroy", sans-serif;
-  font-size: 13px;
-
   --title-heading-font-size: 23px;
   --text-content-font-size: 13px;
   --btn-size: 8px;
+
+  font-family: "Gilroy", sans-serif;
+  font-size: 13px;
 }
 
 .spaces {
@@ -19,7 +19,7 @@
 .padding-top {
   padding-top: 6vw;
 }
-.align-header {
+.align-item {
   margin: auto;
 }
 
@@ -72,7 +72,6 @@
 @media screen and (min-width: 1024px) {
   :root {
     --title-heading-font-size: 28px;
-    --text-content-font-size: 13px;
     --btn-size: 12px;
   }
 }

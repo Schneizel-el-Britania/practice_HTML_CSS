@@ -52,6 +52,7 @@
 .order-call-inner-container > .title-heading {
   width: fit-content;
   padding: 0;
+  text-transform: uppercase;
 }
 
 .order-call-inner-container > .btn {
