@@ -1,20 +1,17 @@
 .card-navigation {
   --nav-items-color: #e8e2d5;
-  --object-size: 199px;
 
-  width: var(--object-size);
-  height: 3.33px;
   margin: auto;
-  margin-top: 2vw;
+  margin-top: 4vw;
   display: flex;
   justify-content: space-between;
   font-size: 0;
 }
 
 .card-nav-item {
-  width: calc(var(--object-size) / 7.2);
+  flex-basis: 13%;
+  padding-top: 1.8%;
 
-  display: inline-block;
   background-color: var(--nav-items-color);
   border-radius: var(--border-radius);
 }
@@ -25,30 +22,8 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
-  .card-navigation {
-    --object-size: 258.7px;
-    height: 4.33px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .card-navigation {
-    --object-size: 344.66px;
-    height: 5.76px;
-  }
-}
-
-@media screen and (min-width: 1336px) {
-  .card-navigation {
-    --object-size: 418.6px;
-    height: 7px;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .card-navigation {
-    --object-size: 595px;
-    height: 9.95px;
+@media screen and (max-width: 767px) {
+  .nav-btns-padding {
+    padding-bottom: 50px;
   }
 }

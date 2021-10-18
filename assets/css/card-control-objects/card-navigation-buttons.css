@@ -1,16 +1,22 @@
 .card-navigation {
+  --btn-nav-size: 2.5rem;
   position: relative;
 }
+
 .card-navigation::before,
 .card-navigation::after {
-  --object-size: 24.85px;
+  content: "\1433";
+  width: var(--btn-nav-size);
+  height: var(--btn-nav-size);
 
-  content: "";
-  width: var(--object-size);
-  height: var(--object-size);
-  background-image: url(../../icons/card-nav-btn-right.png);
-  background-repeat: no-repeat;
-  background-size: var(--object-size);
+  color: white;
+  background-color: var(--main-color);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+
+  font-size: calc(var(--btn-nav-size) * 0.8);
+  line-height: var(--btn-nav-size);
+  text-align: center;
 
   position: absolute;
   bottom: 0;
@@ -18,39 +24,24 @@
   right: 30%;
 }
 .card-navigation::before {
-  background-image: url(../../icons/card-nav-btn-left.png);
+  content: "\1438";
   left: 30%;
+}
+
+.card-navigation:hover::before,
+.card-navigation:hover::after {
+  cursor: pointer;
+  background-color: white;
+  color: var(--main-color);
 }
 
 @media screen and (min-width: 768px) {
   .card-navigation::before,
   .card-navigation::after {
-    top: -4000%;
-    left: 170%;
+    top: -20vw;
+    left: 175%;
   }
   .card-navigation::before {
-    background-image: url(../../icons/card-nav-btn-left.png);
-    left: -80%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .card-navigation::before,
-  .card-navigation::after {
-    --object-size: 33.11px;
-  }
-}
-
-@media screen and (min-width: 1336px) {
-  .card-navigation::before,
-  .card-navigation::after {
-    --object-size: 40.21px;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .card-navigation::before,
-  .card-navigation::after {
-    --object-size: 57.17px;
+    left: -85%;
   }
 }

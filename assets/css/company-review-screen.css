@@ -12,8 +12,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .reviews-card-container > .card-navigation::before,
-  .reviews-card-container > .card-navigation::after {
+  .reviews-card-container .card-navigation::before,
+  .reviews-card-container .card-navigation::after {
     content: none;
   }
 
