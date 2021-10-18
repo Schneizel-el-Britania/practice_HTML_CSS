@@ -1,10 +1,7 @@
 .order-call-container {
-  --order-call-height: 231px;
-  --title-heading-font-size: 18px;
-  --text-content-font-size: 11px;
-  --btn-size: 10px;
+  --height-radio: 21;
+  height: calc(var(--order-call-font-size) * var(--height-radio));
 
-  height: var(--order-call-height);
   margin-top: 6vw;
 
   border-radius: var(--border-radius);
@@ -50,20 +47,26 @@
 }
 
 .order-call-inner-container > .title-heading {
+  --font-size: calc(var(--order-call-font-size) / 0.61);
+
   width: fit-content;
   padding: 0;
   text-transform: uppercase;
 }
 
+.order-call-inner-container > .text-content {
+  --font-size: var(--order-call-font-size);
+}
+
 .order-call-inner-container > .btn {
   padding: 3.5% 25%;
   margin: 0 auto;
+  font-size: var(--order-call-font-size);
 }
 
 @media screen and (min-width: 768px) {
   .order-call-container {
-    --order-call-height: 165px;
-    --btn-size: 11px;
+    --height-radio: 15;
   }
   .order-call-container::after {
     clip-path: polygon(0 0, 25% 0, 55% 100%, 0% 100%);
@@ -89,31 +92,10 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .order-call-container {
-    --order-call-height: 165px;
-  }
   .order-call-inner-container {
     height: 80%;
   }
   .order-call-inner-container > .text-content {
     width: 20vw;
-  }
-}
-
-@media screen and (min-width: 1336px) {
-  .order-call-container {
-    --order-call-height: 200px;
-    --title-heading-font-size: 20px;
-    --text-content-font-size: 13px;
-    --btn-size: 13px;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .order-call-container {
-    --order-call-height: 284px;
-    --title-heading-font-size: 28px;
-    --text-content-font-size: 18px;
-    --btn-size: 18px;
   }
 }
