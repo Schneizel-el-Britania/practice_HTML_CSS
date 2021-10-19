@@ -23,7 +23,7 @@
   color: var(--text-color);
 
   background-image: url(../../icons/callback-input-icon-name.png);
-  background-size: calc(var(--callback-font-size) * 1.5);
+  background-size: calc(var(--callback-font-size) * 1.2);
   background-repeat: no-repeat;
   background-position-y: center;
 }
