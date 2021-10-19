@@ -16,11 +16,11 @@
   padding: var(--benefit-spaces);
   margin: 0.5rem;
 
-  border: 0.7px solid var(--benefit-border-color);
+  outline: 0.7px solid var(--benefit-border-color);
   border-radius: var(--border-radius);
 }
 .benefit-card:hover {
-  border: none;
+  outline: none;
   box-shadow: 0px 2px 30px 5px rgba(0, 0, 0, 0.1);
 }
 
