@@ -1,27 +1,21 @@
 .callback-form-container {
+  --form-text-color: #a9a9a9;
   display: flex;
 }
 
-.callback-form-wrapper {
-  --form-text-color: #a9a9a9;
-  align-self: center;
-}
-
 .callback-form > label {
-  --object-font-size: 11.72px;
-
   width: 100%;
-  margin: 2vh 0;
+  margin: 1.5vh 0;
   display: inline-block;
 
   color: var(--form-text-color);
-  font-size: var(--object-font-size);
+  font-size: var(--callback-font-size);
 }
 
 .callback-input {
   width: 100%;
-  height: 5vh;
-  padding-left: 12%;
+  height: 4vh;
+  padding-left: 10%;
   margin-top: 1vh;
 
   border: none;
@@ -29,33 +23,35 @@
   color: var(--text-color);
 
   background-image: url(../../icons/callback-input-icon-name.png);
+  background-size: calc(var(--callback-font-size) * 1.5);
   background-repeat: no-repeat;
-  background-size: 3vh;
   background-position-y: center;
 }
 .callback-form > label:nth-child(2) > .callback-input {
   background-image: url(../../icons/callback-input-icon-phone.png);
 }
+
 .callback-input:hover {
   border-color: var(--main-color);
 }
 
 .callback-form > .btn {
-  --object-font-size: 9.96px;
+  --font-size: var(--callback-font-size);
+
+  padding: 4%;
+  margin: 1vw auto 1.5vw;
   font-weight: 400;
-  margin: auto;
 }
 
 .callback-agreements {
-  --object-font-size: 6.51px;
+  --font-size: calc(var(--callback-font-size) / 1.75);
+
   width: 80%;
   margin: auto;
-  margin-top: 2vh;
-
   color: var(--form-text-color);
+  font-size: var(--font-size);
+  line-height: calc(var(--font-size) * var(--line-height-ratio));
   text-align: center;
-  font-size: var(--object-font-size);
-  line-height: calc(var(--object-font-size) * 1.4);
 }
 
 .agreement-link {
@@ -67,38 +63,4 @@
   .callback-form-container {
     flex-direction: row-reverse;
   }
-  .callback-form > label {
-    --object-font-size: 12.73px;
-  }
-  .callback-form > .btn {
-    --object-font-size: 12.73px;
-  }
-  .callback-agreements {
-    --object-font-size: 7.07px;
-  }  
 }
-
-@media screen and (min-width: 1336px) {
-  .callback-form > label {
-    --object-font-size: 18px;
-  }
-  .callback-form > .btn {
-    --object-font-size: 18px;
-  }
-  .callback-agreements {
-    --object-font-size: 10px;
-  }  
-}
-
-@media screen and (min-width: 1920px) {
-  .callback-form > label {
-    --object-font-size: 25.58px;
-  }
-  .callback-form > .btn {
-    --object-font-size: 25.58px;
-  }
-  .callback-agreements {
-    --object-font-size: 14.21px;
-  }  
-}
-

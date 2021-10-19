@@ -1,52 +1,18 @@
-.callback-header {
-  --object-font-size: 22px;
-
-  text-align: left;
-  font-size: var(--object-font-size);
-}
-.callback-header > span {
+.callback-sub-heading {
   color: var(--text-color);
 }
 
 .callback-list {
-  --object-font-size: 11px;
-
   color: var(--text-color);
-  font-size: var(--object-font-size);
-  line-height: calc(var(--object-font-size) * 1.3);
+  font-size: var(--callback-font-size);
+  line-height: calc(var(--callback-font-size) * var(--line-height-ratio));
   font-weight: 600;
 }
+
 .callback-list > li {
   padding-left: 2em;
   padding-bottom: 1em;
   background-image: url(../../icons/callback-list-icon.png);
   background-repeat: no-repeat;
   background-position: left top;
-}
-
-@media screen and (min-width: 768px) {
-  .callback-header {
-    --object-font-size: 25px;
-  }
-  .callback-list {
-    --object-font-size: 12.73px;
-  }
-}
-
-@media screen and (min-width: 1336px) {
-  .callback-header {
-    --object-font-size: 35px;
-  }
-  .callback-list {
-    --object-font-size: 18px;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .callback-header {
-    --object-font-size: 49.75px;
-  }
-  .callback-list {
-    --object-font-size: 25.58px;
-  }
 }

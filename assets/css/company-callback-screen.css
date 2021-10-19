@@ -1,3 +1,7 @@
 @import url(./callback-objects/callback-description.css);
 @import url(./callback-objects/callback-form.css);
 @import url(./callback-objects/callback-img.css);
+
+.company-callback .title-heading{
+  text-align: left;
+}
