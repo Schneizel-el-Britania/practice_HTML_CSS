@@ -101,6 +101,10 @@
     font-family: inherit;
     font-size: var(--contact-font-size);
   }
+  .contact-me:hover{
+    background-color: white;
+    color: var(--main-color);
+  }
 
   .auth img {
     margin: auto;

@@ -1,9 +1,6 @@
 .menu-list {
   display: none;
 }
-.menu-list > li {
-  position: relative;
-}
 
 .list-arrow {
   visibility: hidden;
@@ -35,8 +32,19 @@
     background-position: center;
 
     position: absolute;
-    left: 100%;
-    right: -50%;
+    left: 90%;
+    right: -30%;
+  }
+
+  .menu-list > li {
+    position: relative;
+  }
+  .menu-list a {
+    padding: 0.2rem 0.5rem;
+  }
+  .menu-list a:focus {
+    outline: 2px solid var(--main-color);
+    border-radius: var(--border-radius);
   }
 
   .list-search-icon {
