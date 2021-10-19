@@ -1,14 +1,13 @@
 .footer-menu-list {
-  --footer-list-font-size: 14.4px;
-
   text-align: center;
   z-index: 999;
 }
+
 .footer-menu-list li {
   width: fit-content;
   padding-bottom: 2vw;
 
-  font-size: var(--footer-list-font-size);
+  font-size: var(--footer-font-size);
   font-weight: 700;
   text-transform: uppercase;
   white-space: nowrap;
@@ -33,17 +32,5 @@
   }
   .sub-list:last-child {
     columns: 1;
-  }
-}
-
-@media screen and (min-width: 1336px) {
-  .footer-menu-list {
-    --footer-list-font-size: 18px;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .footer-menu-list {
-    --footer-list-font-size: 25.6px;
   }
 }

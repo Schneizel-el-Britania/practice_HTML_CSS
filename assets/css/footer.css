@@ -5,7 +5,6 @@
   --footer-bg-color: #243246;
 
   padding: 5vw 3vw 3vw;
-
   background-color: var(--footer-bg-color);
   color: white;
 }
@@ -16,55 +15,47 @@
 
 .footer-contact-data {
   font-weight: 600;
-  padding-left: 12px;
+  padding-left: var(--footer-font-size);
 }
 
 .footer-contact-number {
-  --object-font-size: 14.4px;
   width: fit-content;
-  padding-bottom: var(--object-font-size);
-  font-size: var(--object-font-size);
-
+  margin-bottom: var(--footer-font-size);
+  font-size: var(--footer-font-size);
   position: relative;
 }
-.footer-contact-number::before {
-  content: "";
-  background-image: url(../icons/footer-phone-icon.png);
-  background-repeat: no-repeat;
-  background-size: 12px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: -12%;
-}
+
 .contact-sub-num {
   color: var(--footer-text-color);
 }
 
 .footer-email {
-  --object-font-size: 12.8px;
+  --font-size: calc(var(--footer-font-size) * 0.9);
 
   width: fit-content;
   color: var(--footer-text-color);
-  font-size: var(--object-font-size);
+  font-size: var(--font-size);
   position: relative;
 }
+
+.footer-contact-number::before,
 .footer-email::before {
   content: "";
-  background-image: url(../icons/footer-email-icon.png);
+  width: var(--footer-font-size);
+  height: var(--footer-font-size);
+
+  background-image: url(../icons/footer-phone-icon.png);
   background-repeat: no-repeat;
-  background-size: 12px;
+  background-size: contain;
+
   position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: -12%;
+  left: -14%;
+}
+.footer-email::before {
+  background-image: url(../icons/footer-email-icon.png);
 }
 
 .footer-social-networks-links {
-  --object-size: 22px;
-
   text-align: end;
 }
 .footer-social-networks-links a + a {
@@ -72,12 +63,14 @@
 }
 
 .footer-social-networks-links div {
-  width: var(--object-size);
-  height: var(--object-size);
+  --img-size: calc(var(--footer-font-size) / 0.63);
+
+  width: var(--img-size);
+  height: var(--img-size);
   margin-top: -5%;
   display: inline-block;
 
-  background-size: var(--object-size);
+  background-size: var(--img-size);
   background-repeat: no-repeat;
 }
 .sn-link-1 {
@@ -96,25 +89,26 @@
 }
 
 .footer-company-info {
-  --object-font-size: 11px;
-  font-size: var(--object-font-size);
+  font-size: var(--footer-font-size);
   padding-bottom: 2vw;
 }
+
 .footer-copyright {
-  --object-font-size: 11px;
   color: var(--footer-text-color);
-  font-size: var(--object-font-size);
+  font-size: calc(var(--footer-font-size) / 1.27);
 }
 
 @media screen and (min-width: 768px) {
   .page-footer {
     position: relative;
   }
+
   .footer-copyright {
     padding: 2vw;
     position: absolute;
     top: 0;
   }
+
   .footer-contact-info {
     margin: 5vw 3vw 3vw;
     flex-direction: row-reverse;
@@ -125,15 +119,17 @@
     right: 0;
     left: 0;
   }
+
   .footer-social-networks-links div {
     margin-top: 0;
   }
+  
   .footer-social-networks-links {
+    padding-top: 4vw;
+
     text-align: left;
     height: fit-content;
     align-self: flex-end;
-
-    padding-top: 4vw;
   }
 
   .footer-company-info {
@@ -144,56 +140,7 @@
   .footer-copyright {
     padding: 0;
     margin-top: 5vw;
+    font-size: calc(var(--footer-font-size) / 0.93);
     text-align: center;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .footer-copyright {
-    --object-font-size: 15px;
-  }
-}
-
-@media screen and (min-width: 1336px) {
-  .footer-contact-number {
-    --object-font-size: 18px;
-  }
-  .footer-email {
-    --object-font-size: 16px;
-  }
-  .footer-email::before,
-  .footer-contact-number::before {
-    background-size: 15px;
-  }
-  .footer-social-networks-links {
-    --object-size: 27.5px;
-  }
-  .footer-company-info {
-    --object-font-size: 14px;
-  }
-  .footer-copyright {
-    --object-font-size: 19px;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .footer-contact-number {
-    --object-font-size: 25.6px;
-  }
-  .footer-email {
-    --object-font-size: 22.75px;
-  }
-  .footer-email::before,
-  .footer-contact-number::before {
-    background-size: 21.3px;
-  }
-  .footer-social-networks-links {
-    --object-size: 41px;
-  }
-  .footer-company-info {
-    --object-font-size: 20px;
-  }
-  .footer-copyright {
-    --object-font-size: 27px;
   }
 }
