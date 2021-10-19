@@ -47,7 +47,7 @@
 .checkbox-text {
   font-size: var(--checkbox-font-size);
   color: var(--checkbox-text-color);
-  line-height: calc(var(--checkbox-font-size) * 1.2);
+  line-height: calc(var(--checkbox-font-size) * var(--line-height-ratio));
 }
 
 @media (pointer: fine) {

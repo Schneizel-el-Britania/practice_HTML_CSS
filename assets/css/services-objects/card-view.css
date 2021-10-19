@@ -54,7 +54,7 @@
 .card-desc {
   margin: 5% 0 15%;
   font-size: 1rem;
-  line-height: 1.2rem;
+  line-height: calc(1rem * var(--line-height-ratio));
 }
 
 .card-more-details {

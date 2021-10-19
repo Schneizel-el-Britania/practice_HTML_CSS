@@ -3,8 +3,10 @@
   --text-color: #414141;
   --border-radius: 5px;
 
+  --line-height-ratio: 1.2;
   --order-call-font-size: 11px;
   --benefit-font-size: 10px;
+  --callback-list-font-size: 11px;
 
   font-family: "Gilroy", sans-serif;
   font-size: 10px;
@@ -24,7 +26,7 @@
   color: var(--main-color);
   font-family: "Trajan Pro 3", serif;
   font-size: var(--font-size);
-  line-height: calc(var(--font-size) * 1.2);
+  line-height: calc(var(--font-size) * var(--line-height-ratio));
   text-align: center;
 }
 
@@ -33,7 +35,7 @@
 
   color: var(--text-color);
   font-size: var(--font-size);
-  line-height: calc(var(--font-size) * 1.2);
+  line-height: calc(var(--font-size) * var(--line-height-ratio));
   text-align: center;
 }
 
@@ -55,6 +57,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  :root{
+    --callback-list-font-size: 13px;
+  }
   .padding-top {
     padding-top: 6vw;
   }
@@ -76,6 +81,7 @@
   :root {
     --order-call-font-size: 13px;
     --benefit-font-size: 14px;
+    --callback-list-font-size: 18px;
     font-size: 16px;
   }
 }
@@ -84,6 +90,7 @@
   :root {
     --order-call-font-size: 18px;
     --benefit-font-size: 20px;
+    --callback-list-font-size: 26px;
     font-size: 23px;
   }
 }
