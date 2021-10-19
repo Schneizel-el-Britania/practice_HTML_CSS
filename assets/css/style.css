@@ -4,6 +4,7 @@
   --border-radius: 5px;
 
   --order-call-font-size: 11px;
+  --benefit-font-size: 10px;
 
   font-family: "Gilroy", sans-serif;
   font-size: 10px;
@@ -74,6 +75,7 @@
 @media screen and (min-width: 1336px) {
   :root {
     --order-call-font-size: 13px;
+    --benefit-font-size: 14px;
     font-size: 16px;
   }
 }
@@ -81,6 +83,7 @@
 @media screen and (min-width: 1920px) {
   :root {
     --order-call-font-size: 18px;
+    --benefit-font-size: 20px;
     font-size: 23px;
   }
 }

@@ -1,114 +1,72 @@
 .benefits-cards-wrapper {
   padding-top: 3vw;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: stretch;
 }
 
 .benefit-card {
-  --object-size: 245px;
-  --object-size-height: 142px;
-  --benefit-spaces: 10px;
-
+  --benefit-spaces: 1rem;
   --benefit-header-color: #696969;
   --benefit-text-color: #9d9d9d;
   --benefit-border-color: #c2c1c2;
 
-  width: var(--object-size);
-  height: var(--object-size-height);
+  flex: 1 1 auto;
   padding: var(--benefit-spaces);
-  margin: 2vw;
+  margin: 0.5rem;
 
-  border: 0.69px solid var(--benefit-border-color);
+  border: 0.7px solid var(--benefit-border-color);
   border-radius: var(--border-radius);
+}
+.benefit-card:hover {
+  border: none;
+  box-shadow: 0px 2px 30px 5px rgba(0, 0, 0, 0.1);
 }
 
 .benefit-header-container {
   height: var(--benefit-logo-size);
-  display: table;
   margin-bottom: var(--benefit-spaces);
+  display: table;
 }
 
 .benefit-card-logo {
-  --object-size: 50px;
+  --logo-size: calc(var(--benefit-font-size) * 5);
 
-  width: calc(var(--object-size) / 1.3);
-  height: var(--object-size);
+  width: calc(var(--logo-size) / 1.3);
+  height: var(--logo-size);
   object-fit: cover;
   object-position: center;
 }
 
 .benefit-card-header {
-  --object-font-size: 11.1px;
+  --font-size: calc(var(--benefit-font-size) * 1.15);
 
   display: table-cell;
-
   color: var(--benefit-header-color);
-  font-size: var(--object-font-size);
+  font-size: var(--font-size);
+  line-height: calc(var(--font-size) * 1.2);
   font-weight: 600;
-  line-height: calc(var(--object-font-size) * 1.5);
+  vertical-align: middle;
 }
 .benefit-card-header::first-letter {
   text-transform: uppercase;
 }
 
 .benefit-card-desc {
-  --object-font-size: 9.71px;
-
-  width: 90%;
   color: var(--benefit-text-color);
-  font-size: var(--object-font-size);
-  line-height: calc(var(--object-font-size) * 1.15);
+  font-size: var(--benefit-font-size);
+  line-height: calc(var(--benefit-font-size) * 1.2);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .benefit-card {
-    --object-size: 187.3px;
-    --object-size-height: 158.16px;
-
-    margin: 1vw;
-  }
-  .benefit-card-logo {
-    --object-size: 50px;
-  }
-  .benefit-card-header {
-    --object-font-size: 11.1px;
-  }
-  .benefit-card-desc {
-    --object-font-size: 9.71px;
+    flex-basis: 25%;
   }
 }
 
-@media screen and (min-width: 1336px) {
+@media screen and (min-width: 992px) {
   .benefit-card {
-    --object-size: 270px;
-    --object-size-height: 228px;
-    --benefit-spaces: 15px;
-  }
-  .benefit-card-logo {
-    --object-size: 70px;
-  }
-  .benefit-card-header {
-    --object-font-size: 16px;
-  }
-  .benefit-card-desc {
-    --object-font-size: 14px;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .benefit-card {
-    --object-size: 383.77px;
-    --object-size-height: 328.08px;
-    --benefit-spaces: 20px;
-  }
-  .benefit-card-logo {
-    --object-size: 90px;
-  }
-  .benefit-card-header {
-    --object-font-size: 22.74px;
-  }
-  .benefit-card-desc {
-    --object-font-size: 19.9px;
+    flex-basis: 20%;
   }
 }
