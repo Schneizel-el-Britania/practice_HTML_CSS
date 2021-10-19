@@ -8,54 +8,36 @@
 
 .review-card-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.reviews-card-container .card-navigation::before,
+.reviews-card-container .card-navigation::after {
+  cursor: pointer;
+  background-color: white;
+  color: var(--main-color);
+}
+
+.reviews-card-container .card-navigation:hover::before,
+.reviews-card-container .card-navigation:hover::after {
+  background-color: var(--main-color);
+  color: white;
 }
 
 @media screen and (min-width: 768px) {
+  .reviews-card-container {
+    position: relative;
+  }
+  .reviews-card-container .card-navigation {
+    margin-top: 2vw;
+    position: initial;
+  }
   .reviews-card-container .card-navigation::before,
   .reviews-card-container .card-navigation::after {
-    content: none;
-  }
-
-  .review-card:first-child::before,
-  .review-card:last-child::after {
-    --object-size: 24.85px;
-
-    content: "";
-    width: var(--object-size);
-    height: var(--object-size);
-    background-image: url(../icons/card-rev-nav-btn-right.png);
-    background-repeat: no-repeat;
-    background-size: var(--object-size);
-
-    position: absolute;
-    bottom: 0;
-    top: 40%;
+    top: 45%;
     left: 97%;
   }
-  .review-card:first-child::before {
-    background-image: url(../icons/card-rev-nav-btn-left.png);
-    left: -3%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .review-card:first-child::before,
-  .review-card:last-child::after {
-    --object-size: 33.11px;
-  }
-}
-
-@media screen and (min-width: 1336px) {
-  .review-card:first-child::before,
-  .review-card:last-child::after {
-    --object-size: 40.21px;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .review-card:first-child::before,
-  .review-card:last-child::after {
-    --object-size: 57.17px;
+  .reviews-card-container .card-navigation::before {
+    left: 0%;
   }
 }

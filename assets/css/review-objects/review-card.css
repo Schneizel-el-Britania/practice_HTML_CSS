@@ -1,32 +1,30 @@
+.hide-card {
+  display: none;
+}
+
 .review-card {
-  --card-padding: 4vw;
+  --card-padding: calc(var(--review-font-size) * 1.5);
+  --rating-color: #f2df33;
+  --review-text-color: #696969;
 
   padding: var(--card-padding);
-  margin: 1vw;
+  margin: auto;
   box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   border-radius: var(--border-radius);
-
-  position: relative;
 }
 
 .rating {
-  --rating-color: #f2df33;
-  --object-font-size: 15px;
-
   padding-bottom: var(--card-padding);
   color: var(--rating-color);
-  font-size: var(--object-font-size);
+  font-size: calc(var(--review-font-size) * 1.2);
   letter-spacing: 2px;
 }
 
 .review-card-text {
-  --review-text-color: #696969;
-  --object-font-size: 13.18px;
-
   padding-bottom: calc(var(--card-padding) / 2);
   color: var(--review-text-color);
-  font-size: var(--object-font-size);
-  line-height: calc(var(--object-font-size) * var(--line-height-ratio));
+  font-size: var(--review-font-size);
+  line-height: calc(var(--review-font-size) * var(--line-height-ratio));
 }
 
 .user-info-container {
@@ -35,7 +33,7 @@
 }
 
 .user-avatar {
-  --object-size: 36.77px;
+  --object-size: calc(var(--review-font-size) / 0.36);
 
   width: var(--object-size);
   height: var(--object-size);
@@ -53,59 +51,24 @@
 }
 
 .user-name {
-  --object-font-size: 12.5px;
-
   color: var(--text-color);
-  font-family: 'Trajan Pro 3', serif;
-  font-size: var(--object-font-size);
+  font-family: "Trajan Pro 3", serif;
+  font-size: var(--review-font-size);
 }
 
 .user-job {
-  --object-font-size: 9px;
-
   padding-top: calc(var(--card-padding) / 3);
   color: var(--main-color);
-  font-size: var(--object-font-size);
+  font-size: calc(var(--review-font-size) / 1.46);
   font-weight: 600;
 }
-@media screen and (min-width: 1024px) {
-.review-card {
-  --card-padding: 2vw;
-}
-}
 
-@media screen and (min-width: 1336px) {
-  .rating {
-    --object-font-size: 20px;
+@media screen and (min-width: 768px) {
+  .hide-card {
+    display: block;
   }
-  .review-card-text {
-    --object-font-size: 19px;
-  }
-  .user-avatar {
-    --object-size: 53px;
-  }
-  .user-name {
-    --object-font-size: 18px;
-  }
-  .user-job {
-    --object-font-size: 13px;
-  }
-}
 
-@media screen and (min-width: 1920px) {
-  .rating {
-    --object-font-size: 30px;
-  }
-  .review-card-text {
-    --object-font-size: 27px;
-  }
-  .user-avatar {
-    --object-size: 75.33px;
-  }
-  .user-name {
-    --object-font-size: 25.58px;
-  }
-  .user-job {
-    --object-font-size: 18.5px;
+  .review-card {
+    flex-basis: 48%;
   }
 }
