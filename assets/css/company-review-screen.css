@@ -21,6 +21,7 @@
   color: var(--main-color);
   box-shadow: none;
   border: 1px solid var(--main-color);
+  line-height: calc(var(--btn-nav-size) * 0.9);
 }
 .reviews-card-container .card-navigation::before {
   content: "\27F5";
