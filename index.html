@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./fonts/Gilroy-Regular/style.css" />
     <link rel="stylesheet" href="./fonts/Gilroy-Semibold/style.css" />
     <link rel="stylesheet" href="./fonts/Gilroy-Bold/style.css" />
+    <link href="./fonts/fontawesome/css/all.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/custom-grid.css" />
@@ -45,21 +46,57 @@
     <main>
       <section class="ask-form container">
         <article class="row">
-          <ul class="menu-list col-12">
-            <li>
-              <a href="#">компания <span class="list-arrow"></span></a>
-            </li>
-            <li>
-              <a href="#">каталог<span class="list-arrow"></span></a>
-            </li>
-            <li><a href="#">контакты</a></li>
-            <li><a href="#">вопросы-ответы</a></li>
-            <li><a href="#">прайс-лист</a></li>
-            <li><a href="#">услуги</a></li>
-            <li>
-              <a href="#"><img class="list-search-icon" src="./assets/icons/search.png" /></a>
-            </li>
-          </ul>
+          <nav class="col-12">
+            <ul class="menu-list">
+              <li>
+                <a href="#">компания <i class="list-arrow fas fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                  <li><a href="#">Оконные системы</a><i class="fas fa-chevron-right"></i></li>
+                  <li>
+                    <a href="#">фасадные системы</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <ul class="sub-menu">
+                      <li><a href="#">Структурный фасад</a></li>
+                      <li><a href="#">Полуструктурный “горизонтальная линия”</a></li>
+                      <li><a href="#">Цветные МФУ</a></li>
+                      <li><a href="#">Измерительное оборудование</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Уличная мебель</a><i class="fas fa-chevron-right"></i></li>
+                  <li><a href="#">мультимедиа проекторы</a><i class="fas fa-chevron-right"></i></li>
+                  <li><a href="#">Цветные МФУ</a><i class="fas fa-chevron-right"></i></li>
+                  <li><a href="#">Измерительное оборудование</a><i class="fas fa-chevron-right"></i></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">каталог<i class="list-arrow fas fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                  <li><a href="#">Оконные системы</a><i class="fas fa-chevron-right"></i></li>
+                  <li>
+                    <a href="#">фасадные системы</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <ul class="sub-menu">
+                      <li><a href="#">Структурный фасад</a></li>
+                      <li><a href="#">Полуструктурный “горизонтальная линия”</a></li>
+                      <li><a href="#">Цветные МФУ</a></li>
+                      <li><a href="#">Измерительное оборудование</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Уличная мебель</a><i class="fas fa-chevron-right"></i></li>
+                  <li><a href="#">мультимедиа проекторы</a><i class="fas fa-chevron-right"></i></li>
+                  <li><a href="#">Цветные МФУ</a><i class="fas fa-chevron-right"></i></li>
+                  <li><a href="#">Измерительное оборудование</a><i class="fas fa-chevron-right"></i></li>
+                </ul>
+              </li>
+              <li><a href="#">контакты</a></li>
+              <li><a href="#">вопросы-ответы</a></li>
+              <li><a href="#">прайс-лист</a></li>
+              <li><a href="#">услуги</a></li>
+              <li>
+                <a href="#"><img class="list-search-icon" src="./assets/icons/search.png" /></a>
+              </li>
+            </ul>
+          </nav>
           <div class="padding-top">
             <div class="ask-form-wrapper">
               <div class="margin-right-form col-12 col-md-6 col-lg-7">
@@ -215,7 +252,9 @@
                 <label>Введите номер телефона<input type="text" class="callback-input" /></label>
                 <input type="submit" class="btn" value="Получить консультацию" />
               </form>
-              <p class="callback-agreements row-overflow-3">Нажимая на кнопку, Вы даете согласие на обработку <a href="#" class="agreement-link">персональных данных</a></p>
+              <p class="callback-agreements row-overflow-3">
+                Нажимая на кнопку, Вы даете согласие на обработку <a href="#" class="agreement-link">персональных данных</a>
+              </p>
             </div>
             <div class="col-5 col-md-6">
               <img class="callback-img" src="./assets/images/iPhone-X-Mockup.png" alt="iPhone-X" />

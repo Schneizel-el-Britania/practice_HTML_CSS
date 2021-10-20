@@ -1,4 +1,9 @@
 .menu-list {
+  --dark-main-color: #60a861;
+  display: none;
+}
+
+.sub-menu {
   display: none;
 }
 
@@ -9,7 +14,6 @@
 @media screen and (min-width: 1024px) {
   .menu-list {
     --font-size: 1.13rem;
-
     padding: 1.5vw 3vw 0;
     display: flex;
     justify-content: space-between;
@@ -24,30 +28,72 @@
   .menu-list > li:nth-child(1):hover .list-arrow,
   .menu-list > li:nth-child(2):hover .list-arrow {
     visibility: visible;
-    height: 100%;
-
-    background-image: url(../../icons/list-arrow.png);
-    background-repeat: no-repeat;
-    background-size: var(--font-size);
-    background-position: center;
-
-    position: absolute;
-    left: 90%;
-    right: -30%;
   }
 
   .menu-list > li {
     position: relative;
   }
-  .menu-list a {
-    padding: 0.2rem 0.5rem;
-  }
   .menu-list a:focus {
-    outline: 2px solid var(--main-color);
-    border-radius: var(--border-radius);
+    outline: none;
   }
 
   .list-search-icon {
     width: calc(var(--font-size) / 0.75);
+  }
+
+  .menu-list > li:nth-child(1):hover > .sub-menu,
+  .menu-list > li:nth-child(2):hover > .sub-menu {
+    display: block;
+  }
+  .sub-menu > li:hover > .sub-menu {
+    display: block;
+  }
+
+  .sub-menu {
+    background-color: var(--main-color);
+    border-radius: calc(var(--border-radius) * 2);
+
+    color: white;
+    font-size: calc(var(--font-size) * 0.7);
+    font-weight: 600;
+    text-transform: lowercase;
+    white-space: nowrap;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+  }
+
+  .sub-menu .sub-menu {
+    top: 0;
+    left: 100%;
+  }
+
+  .sub-menu > li {
+    padding: calc(var(--font-size) / 3) 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  .sub-menu > li:hover {
+    background-color: var(--dark-main-color);
+  }
+  .sub-menu > li:first-child:hover {
+    border-top-left-radius: calc(var(--border-radius) * 2);
+    border-top-right-radius: calc(var(--border-radius) * 2);
+  }
+  .sub-menu > li:last-child:hover {
+    border-bottom-left-radius: calc(var(--border-radius) * 2);
+    border-bottom-right-radius: calc(var(--border-radius) * 2);
+  }
+  .sub-menu > li + li {
+    border-top: 0.3px solid white;
+  }
+  .sub-menu > li > a::first-letter {
+    text-transform: uppercase;
+  }
+  .sub-menu a {
+    padding-left: 0.25rem;
   }
 }
