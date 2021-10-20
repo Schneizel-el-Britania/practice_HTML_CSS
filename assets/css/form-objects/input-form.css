@@ -4,10 +4,9 @@
   --input-border-color: #cccccc;
   --input-text-color: #c2c2c2;
   --checkbox-text-color: #a3a3a3;
-  --input-font-size: 11px;
   --textarea-height: 120px;
 
-  font-size: var(--input-font-size);
+  font-size: var(--sub-font-size);
 }
 
 .input-data {
@@ -49,7 +48,6 @@ textarea.input-data {
   .input-form {
     --margin-top: 20px;
   }
-
   .checkbox-container {
     --checkbox-font-size: 10px;
   }
@@ -70,9 +68,6 @@ textarea.input-data {
 }
 
 @media screen and (min-width: 1336px) {
-  .input-form {
-    --input-font-size: 14px;
-  }
   .checkbox-container {
     --checkmark-size: 18px;
     --checkbox-font-size: 14px;
@@ -80,9 +75,6 @@ textarea.input-data {
 }
 
 @media screen and (min-width: 1920px) {
-  .input-form {
-    --input-font-size: 20px;
-  }
   .checkbox-container {
     --checkmark-size: 26px;
     --checkbox-font-size: 20px;

@@ -8,7 +8,7 @@
 
 @media screen and (min-width: 1024px) {
   .menu-list {
-    --menu-list-font-size: 15px;
+    --font-size: 1.13rem;
 
     padding: 1.5vw 3vw 0;
     display: flex;
@@ -16,7 +16,7 @@
     align-items: center;
 
     color: var(--text-color);
-    font-size: var(--menu-list-font-size);
+    font-size: var(--font-size);
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -28,7 +28,7 @@
 
     background-image: url(../../icons/list-arrow.png);
     background-repeat: no-repeat;
-    background-size: var(--menu-list-font-size);
+    background-size: var(--font-size);
     background-position: center;
 
     position: absolute;
@@ -48,18 +48,6 @@
   }
 
   .list-search-icon {
-    width: calc(var(--menu-list-font-size) / 0.75);
-  }
-}
-
-@media screen and (min-width: 1336px) {
-  .menu-list {
-    --menu-list-font-size: 18px;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .menu-list {
-    --menu-list-font-size: 26px;
+    width: calc(var(--font-size) / 0.75);
   }
 }

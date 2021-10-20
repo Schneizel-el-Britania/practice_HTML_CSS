@@ -1,6 +1,6 @@
 .order-call-container {
   --height-radio: 21;
-  height: calc(var(--order-call-font-size) * var(--height-radio));
+  height: calc(var(--sub-font-size) * var(--height-radio));
 
   margin-top: 6vw;
 
@@ -47,7 +47,7 @@
 }
 
 .order-call-inner-container > .title-heading {
-  --font-size: calc(var(--order-call-font-size) / 0.61);
+  --font-size: calc(var(--sub-font-size) / 0.7);
 
   width: fit-content;
   padding: 0;
@@ -55,13 +55,13 @@
 }
 
 .order-call-inner-container > .text-content {
-  --font-size: var(--order-call-font-size);
+  --font-size: var(--sub-font-size);
 }
 
 .order-call-inner-container > .btn {
   padding: 3.5% 25%;
   margin: 0 auto;
-  font-size: var(--order-call-font-size);
+  font-size: var(--sub-font-size);
 }
 
 @media screen and (min-width: 768px) {

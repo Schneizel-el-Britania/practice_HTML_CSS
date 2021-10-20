@@ -1,6 +1,6 @@
 .page-header {
   --header-elements-size: 70px;
-  --main-heading-font-size: 18px;
+  --number-font-size: calc(var(--sub-font-size) * 1.6);
 
   margin-top: 0.5vw;
   padding: 0 4vw;
@@ -28,26 +28,13 @@
   text-transform: uppercase;
 }
 
-.menu-btn > img {
-  width: var(--header-elements-size);
-  height: var(--header-elements-size);
-}
-
 @media screen and (min-width: 768px) {
   .page-header {
     --header-elements-size: 8vw;
-    --main-heading-font-size: 27px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .page-header {
-    --number-font-size: 18px;
-    --number-desc-font-size: 12px;
-    --contact-font-size: 12px;
-    --auth-font-size: 9px;
-  }
-
   .header-wrapper {
     width: 48vw;
     height: var(--header-elements-size);
@@ -85,7 +72,7 @@
   }
   .contact-number p:last-child {
     text-align: end;
-    font-size: var(--number-desc-font-size);
+    font-size: var(--sub-font-size);
   }
   .contact-number p:last-child::first-letter {
     text-transform: uppercase;
@@ -99,9 +86,9 @@
     background-color: inherit;
     color: inherit;
     font-family: inherit;
-    font-size: var(--contact-font-size);
+    font-size: var(--sub-font-size);
   }
-  .contact-me:hover{
+  .contact-me:hover {
     background-color: white;
     color: var(--main-color);
   }
@@ -114,20 +101,13 @@
 
   .auth {
     padding-top: 5px;
-    font-size: var(--auth-font-size);
+    font-size: var(--sub-font-size);
     position: relative;
     vertical-align: bottom;
   }
 }
 
 @media screen and (min-width: 1336px) {
-  .page-header {
-    --main-heading-font-size: 32px;
-    --number-font-size: 22px;
-    --number-desc-font-size: 13px;
-    --contact-font-size: 14px;
-    --auth-font-size: 11px;
-  }
   .header-wrapper {
     width: 45vw;
   }
@@ -140,12 +120,6 @@
 }
 
 @media screen and (min-width: 1920px) {
-  .page-header {
-    --main-heading-font-size: 45px;
-    --number-font-size: 31px;
-    --contact-font-size: 20px;
-    --auth-font-size: 19px;
-  }
   .header-wrapper {
     width: 45vw;
   }

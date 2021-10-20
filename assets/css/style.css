@@ -2,16 +2,17 @@
   --main-color: #65c466;
   --text-color: #414141;
   --border-radius: 5px;
-
   --line-height-ratio: 1.2;
-  --order-call-font-size: 11px;
-  --benefit-font-size: 10px;
+
+  --main-heading-font-size: 18px;
+  --call-btn-size: 55px;
   --callback-font-size: 11px;
   --review-font-size: 13px;
   --footer-font-size: 14px;
 
   font-family: "Gilroy", sans-serif;
   font-size: 10px;
+  --sub-font-size: 11px;
 }
 
 .padding-top {
@@ -69,6 +70,7 @@
 
 @media screen and (min-width: 768px) {
   :root {
+    --main-heading-font-size: 27px;
     --callback-font-size: 13px;
   }
   .padding-top {
@@ -90,22 +92,24 @@
 
 @media screen and (min-width: 1336px) {
   :root {
-    --order-call-font-size: 13px;
-    --benefit-font-size: 14px;
+    --main-heading-font-size: 32px;
+    --call-btn-size: 69px;
     --callback-font-size: 18px;
     --review-font-size: 19px;
     --footer-font-size: 18px;
     font-size: 16px;
+    --sub-font-size: 14px;
   }
 }
 
 @media screen and (min-width: 1920px) {
   :root {
-    --order-call-font-size: 18px;
-    --benefit-font-size: 20px;
+    --main-heading-font-size: 45px;
+    --call-btn-size: 98px;
     --callback-font-size: 26px;
     --review-font-size: 27px;
     --footer-font-size: 25px;
     font-size: 23px;
+    --sub-font-size: 20px;
   }
 }
