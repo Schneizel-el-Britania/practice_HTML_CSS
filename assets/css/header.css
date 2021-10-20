@@ -79,6 +79,7 @@
   }
 
   .contact-me {
+    max-width: 18vw;
     padding: 1vw 2.5vw;
 
     border: 2px solid white;
@@ -87,6 +88,10 @@
     color: inherit;
     font-family: inherit;
     font-size: var(--sub-font-size);
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .contact-me:hover {
     background-color: white;

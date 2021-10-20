@@ -21,13 +21,13 @@
 }
 
 .review-card-text {
-  padding-bottom: calc(var(--card-padding) / 2);
   color: var(--review-text-color);
   font-size: var(--review-font-size);
   line-height: calc(var(--review-font-size) * var(--line-height-ratio));
 }
 
 .user-info-container {
+  padding-top: calc(var(--card-padding) / 2);
   display: inline-block;
   vertical-align: middle;
 }

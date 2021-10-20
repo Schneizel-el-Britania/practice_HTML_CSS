@@ -12,6 +12,10 @@
   text-align: left;
 }
 
+.submit-wrapper .btn {
+  max-width: 15rem;
+}
+
 @media screen and (min-width: 768px) {
   .margin-right-form {
     margin-left: auto;
@@ -22,7 +26,7 @@
     justify-content: space-between;
     position: relative;
   }
-  
+
   .ask-form-wrapper .text-content {
     margin-bottom: 6%;
   }
