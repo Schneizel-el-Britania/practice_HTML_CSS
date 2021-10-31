@@ -14,24 +14,21 @@
 .reviews-card-container .card-navigation {
   --btn-nav-size: 2rem;
 }
-.reviews-card-container .card-navigation::before,
+
 .reviews-card-container .card-navigation::after {
-  content: "\27F6";
-  background-color: white;
-  color: var(--main-color);
-  box-shadow: none;
-  border: 1px solid var(--main-color);
-  line-height: calc(var(--btn-nav-size) * 0.9);
+  background-image: url(../icons/card-nav-btns/rev-btn-right.png);
 }
-.reviews-card-container .card-navigation::before {
-  content: "\27F5";
+.reviews-card-container .card-navigation:hover::after {
+  background-image: url(../icons/card-nav-btns/rev-btn-right-selected.png);
 }
 
-.reviews-card-container .card-navigation:hover::before,
-.reviews-card-container .card-navigation:hover::after {
-  background-color: var(--main-color);
-  color: white;
+.reviews-card-container .card-navigation::before {
+  background-image: url(../icons/card-nav-btns/rev-btn-left.png);
 }
+.reviews-card-container .card-navigation:hover::before{
+  background-image: url(../icons/card-nav-btns/rev-btn-left-selected.png);
+}
+
 
 @media screen and (min-width: 768px) {
   .reviews-card-container {

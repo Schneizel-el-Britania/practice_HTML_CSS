@@ -5,18 +5,13 @@
 
 .card-navigation::before,
 .card-navigation::after {
-  content: "\1433";
+  content: "";
   width: var(--btn-nav-size);
   height: var(--btn-nav-size);
 
-  color: white;
-  background-color: var(--main-color);
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-
-  font-size: calc(var(--btn-nav-size) * 0.8);
-  line-height: var(--btn-nav-size);
-  text-align: center;
+  background-image: url(../../icons/card-nav-btns/btn-right.png);
+  background-repeat: no-repeat;
+  background-size: var(--btn-nav-size);
 
   position: absolute;
   bottom: 0;
@@ -24,15 +19,20 @@
   right: 30%;
 }
 .card-navigation::before {
-  content: "\1438";
+  content: "";
+  background-image: url(../../icons/card-nav-btns/btn-left.png);
   left: 30%;
 }
 
 .card-navigation:hover::before,
 .card-navigation:hover::after {
   cursor: pointer;
-  background-color: white;
-  color: var(--main-color);
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  background-image: url(../../icons/card-nav-btns/btn-right-selected.png);
+}
+.card-navigation:hover::before{
+  background-image: url(../../icons/card-nav-btns/btn-left-selected.png);
 }
 
 @media screen and (min-width: 768px) {
